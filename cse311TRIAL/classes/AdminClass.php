@@ -1,30 +1,21 @@
 <?php 
     require 'UserClass.php';
     class Admin extends user{
-        private $name = 'N/A';
         private $designation = 'N/A';
-        private $info = 'N/A';
         private $access = true;
         private $canCheckRec = true;
         private $canAuthorizeAdmin = true;
         private $canTrackAllInfo = true;
-        function __construct($name, $designation)
+        function __construct($designation)
         {
 
-            $this->name = $name;
-            $this->designation = $designation;
+            $this->setDesignation($designation);
 
         }
 
         //getters
-        function getName(){
-            return $this->name;
-        }
         function getDesignation(){
             return $this->designation;
-        }
-        function getInfo(){
-            return $this->info;
         }
         function getAccess(){
             return $this->access;
@@ -41,14 +32,8 @@
 
 
         //setters
-        function setName($name){
-            $this->name = $name;
-        }
         function setDesignation($designation){
             $this->designation = $designation;
-        }
-        function setInfo($info){
-            $this->info = $info;
         }
         function setAccess($access){
             $this->access = $access;

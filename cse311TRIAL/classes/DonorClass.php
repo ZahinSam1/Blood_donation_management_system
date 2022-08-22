@@ -5,9 +5,8 @@
         //private $donorName;
         private $condition;
         
-        function __construct($name)
+        function __construct()
         {
-            $this->setName($name);
 
         }
 

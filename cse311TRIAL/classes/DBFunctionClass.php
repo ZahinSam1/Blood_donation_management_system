@@ -88,6 +88,14 @@
             }
         }
 
+        public function getAllInfo(){
+            $query = "SELECT * FROM Users";
+            $srcRslt = mysqli_query($this->db, $query);
+            $result = mysqli_fetch_array($srcRslt);
+
+            return $result;
+        }
+
     }
 
 

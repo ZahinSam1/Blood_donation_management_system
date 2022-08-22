@@ -4,10 +4,9 @@
     class patient extends user{
 
         private $disease = 'N/A';
-        function __construct($name, $age, $bloodGroup){
-            $this->setName($name);
-            $this->setAge($age);
-            $this->setBloodGroup($bloodGroup);
+        function __construct()
+        {
+            
         }
 
         //getters
