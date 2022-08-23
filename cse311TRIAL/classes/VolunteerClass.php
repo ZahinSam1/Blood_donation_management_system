@@ -4,9 +4,10 @@
     class Volunteer extends Admin{
 
         private $salary = 'N/A';
-        function __construct($name)
+        private $user;
+        function __construct()
         {
-            $this->setName($name);
+            $this->user = new user();
             $this->setCanAuthorizeAdmin(false);
             $this->setCanTrackAllInfo(false);
         }

@@ -1,21 +1,26 @@
-<?php
-    // require 'connectionClass.php';
-    //require 'DonorClass.php';
-    require 'DBFunctionClass.php';
-
-    //$admin1 = new Admin('Ruhama', 'CEO');
-    //$admin1 = new Donor('ruhama', 'B+');
-    // $connect = new connection();
-
-    $func = new DBFunctions();
-
-    
-
-    // echo $admin1->getName();
-    // echo "<br>";
-    // echo $admin1->getDesignation();
-    // echo "<br>";
-    // //$admin1->setBloodGroup("B+");
-    // echo $admin1->getBLoodGroup();
-
-?>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>php test</title>
+    </head>
+    <body>
+        <?php
+            require 'DBFunctionClass.php';
+            require 'AdminClass.php';
+            $admin1 = new Admin("rafifa", "CSO");
+            $admin1->setBloodGroup("A+");
+        ?>
+        <table border="1">
+            <tr>
+                <th>name</th>
+                <th>designation</th>
+                <th>blood Group</th>
+            </tr>
+            <tr>
+                <td><?php echo $admin1->getName() ?></td>
+                <td><?php echo $admin1->getDesignation() ?></td>
+                <td><?php echo $admin1->getBloodGroup() ?></td>
+            </tr>
+        </table>
+    </body>
+</html>

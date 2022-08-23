@@ -4,11 +4,10 @@
     class Donor extends user{
         //private $donorName;
         private $condition;
-        
-        function __construct($name)
+        private $user;
+        function __construct()
         {
-            $this->setName($name);
-
+            $this->user = new user();
         }
 
         //getters

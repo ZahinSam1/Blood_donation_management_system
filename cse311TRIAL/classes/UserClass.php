@@ -1,5 +1,5 @@
 <?php 
-    require 'DBFunctionClass.php';
+    //require 'DBFunctionClass.php';
     
     class user{
         private $func;
@@ -111,6 +111,22 @@
                 $this->getWeight(), $this->getPhoneNumber(),
                 $this->getAddress(), $this->getBloodGroup()
                 );
+        }
+
+        public function getPreviousInfo($emailID){
+
+            $info = $this->func->getPreviousInfo($emailID);
+            
+            $this->setId($info['ID']);
+            $this->setemailId($info['Email_ID']);
+            $this->setUserName($info['User_Name']);
+            $this->setName($info['Name']);
+            $this->setAge($info['Age']);
+            $this->setHeight($info['Height']);
+            $this->setWeight($info['weight']);
+            $this->setPhoneNumber($info['Phone_Number']);
+            $this->setAddress($info['Address']);
+            $this->setBloodGroup($info['Blood_Group']);
         }
 
 

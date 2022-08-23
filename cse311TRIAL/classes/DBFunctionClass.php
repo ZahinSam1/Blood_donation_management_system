@@ -1,6 +1,6 @@
 <?php
     require_once 'connectionClass.php';
-    session_start();
+    //session_start();
 
     class DBFunctions {
         private $db;
@@ -88,10 +88,13 @@
             }
         }
 
+        public function getUserInfo($emailID){
+            $query = "SELECT * FROM Users WHERE Email_ID = $emailID";
+            $result = mysqli_query($this->db, $query);
+            $row = mysqli_fetch_array($result);
+            return $row;
+        }
+
     }
-
-
-
-
 
 ?>

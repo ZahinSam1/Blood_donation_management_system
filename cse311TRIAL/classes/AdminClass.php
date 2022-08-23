@@ -8,12 +8,10 @@
         private $canCheckRec = true;
         private $canAuthorizeAdmin = true;
         private $canTrackAllInfo = true;
-        function __construct($name, $designation)
+        private $user;
+        function __construct()
         {
-
-            $this->name = $name;
-            $this->designation = $designation;
-
+            $this->user = new user();
         }
 
         //getters
