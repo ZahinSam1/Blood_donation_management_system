@@ -1,22 +1,27 @@
 *{
     z-index: 0;
     margin: 0;
-    padding: 0;
-    box-sizing: content-box;
+    /* padding: 0; */
+    /* box-sizing: content-b; */
+    aspect-ratio: auto;
 
 }
 body{
     background-color: white;
+    
 }
 /* this is for the background */
 .background{
-    width: fit-content;
-    height: fit-content;
+    /* width: fit-content; */
+    /* height: fit-content; */
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-
+    width: auto;
+    height: auto;
+    /* left: -10px; */
+    /* overflow: hidden; */
 }
 /* this is for the navbar */
 
@@ -57,12 +62,16 @@ nav ul li a{
     text-shadow: 2px 2px 4px rgb(0, 0, 0);
 }
 .main{
-    height: 100%;
+    z-index: 0;
+    background-color: rgba(47, 84, 206, 0.747);
+    height: 1250vh;
     width: 100%;
-    margin-top: 30px;
+    top: 750px;
+    /* margin-top: 30px; */
     padding: 0;
-    box-sizing: content-box;
+    /* box-sizing: content-box; */
     position: absolute;
+    overflow: hidden;
 
 }
 
@@ -71,11 +80,11 @@ nav ul li a{
 }
 .LSF h1{
     position: absolute;
-    left: 100px;
-    z-index: 2;
-    font-size: 80px;
+    margin: 10%;
+    z-index: 20;
+    font-size: 12vh;
     color: rgb(217, 230, 252);
-    top: -500px;
+    top: 200px;
     height: 50px;
     width: 1000px;
     text-shadow: 3px 4px 7px rgba(0, 0, 0, 0.8);
@@ -84,37 +93,40 @@ nav ul li a{
 .backvid{
     z-index: -1;
     position: fixed;
-    /* height: 100%;
-    width: 100%; */
     height: fit-content;
-    width: fit-content;
+    width: 100%;
+    /* height: auto;
+    width: auto; */
     right: 0;
     bottom: 0;
 }
 
-.floating{
+/* floating{ */
     /* display:inline-block; */
-    position:absolute;
+    /* position:absolute; */
     /* margin: 0px; */
-    z-index: 0;
-    left: 20px;
-    width: 26vh;
-    height: 200vh;
-    top: 800px;
+    /* z-index: 20; */
+    /* left: 20px; */
+    /* width: 26vh; */
+    /* height: 200vh; */
+    /* top: 900px; */
     /* padding: 0% 0%; */
     /* background-color: rgba(218, 219, 248, 0.806); */
 
     /* box-shadow: 0px 40px 10px 50px rgb(196, 196, 196); */
-}
+/* } */
 
-.float_background{
-    height: 1350vh;
-    left: -20px;
-    width: 181.5vh;
+/* .float_background{
+    /* min-width: 1200px; */
+    /* height: 1350vh; */
+    /* width: auto;
+    top: 120px;
+    left: 20px;
     position: absolute;
-    background-color: rgba(255, 252, 252, 0.817);
+    background-color: rgba(255, 252, 252, 0.817); */
     /* background-image: linear-gradient(to right, #ffffff, rgba(255, 255, 255, 0.548)); */
-}
+/* } */ 
+
 .longline{
     left: -20px;
     top: 0px;
@@ -126,14 +138,14 @@ nav ul li a{
     box-shadow: 1px 2px 11px 2px rgba(0, 0, 0, 0.288);
 
 }
-.wybt{
+.wybt h1{
     z-index: 2;
     position: absolute;
-    left: 100px;
+    text-align:center;
+    margin-left: 10%;
+    margin-right: 10%;
     top: 60px;
-    height: 20px;
-    width: 1000px;
-    font-size: 17px;
+    font-size: 33px;
     color: rgba(74, 2, 2, 0.701);
 }
 
@@ -184,6 +196,12 @@ nav ul li a{
     position: relative;
     left: 1090px;
     top: -910px;
+}
+.donatenow a{
+    position: absolute;
+    background-color: black;
+    color: #525252;
+    z-index: 5;
 }
 /* donorpanel start */
 .donate{
@@ -308,11 +326,33 @@ select{
 }
 
 /* article starts */
-
-.site-container{
-    position: absolute;
+/* .xop-banner{
+    z-index: 4;
     top: 1200px;
-    left: 40px;
+    height: 10vh;
+    width: 100%;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.212); */
+
+    /* z-index: 0;
+    background-color: rgba(47, 84, 206, 0.747);
+    height: 1000vh;
+    width: 100%;
+    top: 900px;
+    /* margin-top: 30px; */
+    /* padding: 0; */
+    /* box-sizing: content-box; */
+    /* position: absolute; */
+    /* overflow: hidden; */
+ 
+/* } */
+.site-container{
+    z-index: 6;
+    padding: 10px;
+    /* width:max-content; */
+    position: absolute;
+    top: 300px;
+    left: 2%;
     margin: 2rem auto;
     max-width: calc(100% - 80px);
 }
@@ -368,20 +408,31 @@ select{
 
 /* facts start */
 
-.facts{
+/* .facts{
     position: absolute;
     top: 250vh;
     max-width: 100%;
-    height: 100vh;
-    width: 200vh;
-    
-}
+    height: 1217.1vh;
+    width: fit-content;
+    background-color: rgba(255, 255, 255, 0.747);
+    /*    z-index: 0;
+    background-color: rgba(47, 84, 206, 0.747);
+    height: 1000vh;
+    width: 100%;
+    top: 900px;
+    /* margin-top: 30px; */
+    /* padding: 0; */
+    /* box-sizing: content-box; */
+    /* position: absolute;
+    overflow: hidden; */
+ 
 
 .factstext{
+    
     margin-top: 130px;
     margin-left: 10%;
     margin-right: 10%;
-    padding: 10%;
+    padding: 10px;
     line-height: 35px;
     
 }
@@ -398,11 +449,11 @@ select{
     font-size: 20px;
     text-align: center;
 }
-.facts h6{
+.factstext h6{
     color: transparent;
 }
 
-.facts h1{
+.factstext h1{
     font-size: 7vh;
     padding: 10px;
     font-weight: 1000;
