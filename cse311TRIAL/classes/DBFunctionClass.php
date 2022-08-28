@@ -1,6 +1,6 @@
 <?php
     require_once 'connectionClass.php';
-    //session_start();
+    session_start();
 
     class DBFunctions {
         private $db;

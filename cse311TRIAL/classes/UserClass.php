@@ -1,5 +1,5 @@
 <?php 
-    //require 'DBFunctionClass.php';
+    require_once 'DBFunctionClass.php';
     
     class user{
         private $func;
