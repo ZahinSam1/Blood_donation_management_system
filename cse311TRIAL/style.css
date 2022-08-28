@@ -3,7 +3,6 @@
     margin: 0;
     /* padding: 0; */
     /* box-sizing: content-b; */
-    aspect-ratio: auto;
 
 }
 body{
@@ -99,43 +98,20 @@ nav ul li a{
     width: auto; */
     right: 0;
     bottom: 0;
+    /* min-width: 100vh; */
+    min-height: 100vh;
 }
 
-/* floating{ */
-    /* display:inline-block; */
-    /* position:absolute; */
-    /* margin: 0px; */
-    /* z-index: 20; */
-    /* left: 20px; */
-    /* width: 26vh; */
-    /* height: 200vh; */
-    /* top: 900px; */
-    /* padding: 0% 0%; */
-    /* background-color: rgba(218, 219, 248, 0.806); */
-
-    /* box-shadow: 0px 40px 10px 50px rgb(196, 196, 196); */
-/* } */
-
-/* .float_background{
-    /* min-width: 1200px; */
-    /* height: 1350vh; */
-    /* width: auto;
-    top: 120px;
-    left: 20px;
-    position: absolute;
-    background-color: rgba(255, 252, 252, 0.817); */
-    /* background-image: linear-gradient(to right, #ffffff, rgba(255, 255, 255, 0.548)); */
-/* } */ 
 
 .longline{
     left: -20px;
-    top: 0px;
-    z-index: 20;
+    top: 115px;
+    z-index: 2;
     position: absolute;
-    height: 20px;
+    height: 100px;
     width: 200%;
-    background-color: rgba(236, 178, 178, 0.062);
-    box-shadow: 1px 2px 11px 2px rgba(0, 0, 0, 0.288);
+    background-color: rgba(236, 178, 178, 0.021);
+    box-shadow: 1px 2px 11px 2px rgba(0, 0, 0, 0.082);
 
 }
 .wybt h1{
@@ -361,6 +337,7 @@ select{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(265px, 1fr));
     gap: 2rem;
+    
 }
 .article-image{
     margin: 0;
@@ -372,12 +349,13 @@ select{
     border-radius: 20px 20px 0 0;
 }
 .article-card {
-    background: white;
+    background: rgba(255, 255, 255, 0.272);
     border-radius: 20px;
+    border-color: #000;
     transition: 0.3s;
 }
 .article-card:hover{
-    box-shadow: 10px 6px 20px 0 rgba(34 68 123 0.2);
+    box-shadow: 10px 6px 20px 0 rgba(153, 153, 153, 0.635);
     cursor: pointer;
 }
 .article-content{
@@ -406,25 +384,27 @@ select{
 
 /* article ends */
 
+.money h1{
+    position: absolute;
+    top: 900px;
+    padding: 120px;
+    text-align: center;
+    background: -webkit-linear-gradient(right, rgb(184, 0, 0), #333);
+    /* got it from internet */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.money a{
+    position: absolute;
+    top: 1120px;
+    font-size: 5vh;
+    margin-left: 30%;
+    margin-right: 30%;
+    color: rgb(209, 13, 13);
+}
+
 /* facts start */
 
-/* .facts{
-    position: absolute;
-    top: 250vh;
-    max-width: 100%;
-    height: 1217.1vh;
-    width: fit-content;
-    background-color: rgba(255, 255, 255, 0.747);
-    /*    z-index: 0;
-    background-color: rgba(47, 84, 206, 0.747);
-    height: 1000vh;
-    width: 100%;
-    top: 900px;
-    /* margin-top: 30px; */
-    /* padding: 0; */
-    /* box-sizing: content-box; */
-    /* position: absolute;
-    overflow: hidden; */
  
 
 .factstext{
@@ -762,9 +742,7 @@ footer{
     flex-wrap: wrap;
     justify-content: space-between;
   }
-  footer .content p,a{
-    color: #fff;
-  }
+ 
   footer .content .box{
     width: 33%;
     transition: all 0.4s ease;
@@ -778,6 +756,7 @@ footer{
   }
   footer .content p{
     text-align: justify;
+    color: #000;
   }
   footer .content .lower .topic{
     margin: 24px 0 5px 0;
@@ -790,51 +769,43 @@ footer{
   }
   footer .content .middle a{
     line-height: 32px;
+    color: rgb(255, 255, 255);
   }
+  
   footer .content .right input[type="text"]{
     height: 45px;
     width: 100%;
     outline: none;
     color: #d9d9d9;
-    background: #000;
+    background: rgba(207, 204, 204, 0.411);
     border-radius: 5px;
     padding-left: 10px;
     font-size: 17px;
-    border: 2px solid #222222;
+    border: 2px solid rgba(65, 64, 64, 0);
   }
+footer .content .upper{
+    width: 600px;
+}
+  
 footer .content .right input[type="submit"]{
-    height: 42px;
+    height: 40px;
     width: 100%;
     font-size: 18px;
     color: #d9d9d9;
-    background: #eb2f06;
+    background: #731414;
     outline: none;
     border-radius: 5px;
     letter-spacing: 1px;
     cursor: pointer;
     margin-top: 12px;
-    border: 2px solid #eb2f06;
+    border: 2px solid #731414;
     transition: all 0.3s ease-in-out;
   }
 .content .right input[type="submit"]:hover{
     background: none;
-    color:  #eb2f06;
+    color:  #6c4c44;
   }
-footer .content .media-icons a{
-    font-size: 16px;
-    height: 45px;
-    width: 45px;
-    display: inline-block;
-    text-align: center;
-    line-height: 43px;
-    border-radius: 5px;
-    border: 2px solid #222222;
-    margin: 30px 5px 0 0;
-    transition: all 0.3s ease;
-  }
-.content .media-icons a:hover{
-    border-color: #eb2f06;
-  }
+
 footer .bottom{
     width: 100%;
     text-align: right;
