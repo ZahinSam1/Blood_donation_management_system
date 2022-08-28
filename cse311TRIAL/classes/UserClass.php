@@ -18,7 +18,7 @@
 
         function __construct()
         {
-            $func = new DBFunctions();
+            
         }
 
         //gettters

@@ -9,7 +9,6 @@
         private $user;
         function __construct()
         {
-            $this->user = new user();
         }
 
         //getters
