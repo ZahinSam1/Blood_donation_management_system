@@ -35,7 +35,7 @@
         }
 
 
-        function connect(){
+        public function connect(){
             $db_connect = mysqli_connect(
                 $this->db_hostName, 
                 $this->db_userName, 

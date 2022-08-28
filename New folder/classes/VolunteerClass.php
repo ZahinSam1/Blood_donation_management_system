@@ -7,7 +7,6 @@
         private $user;
         function __construct()
         {
-            $this->user = new user();
             $this->setCanAuthorizeAdmin(false);
             $this->setCanTrackAllInfo(false);
         }

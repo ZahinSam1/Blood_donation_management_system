@@ -1,6 +1,6 @@
 <?php
     require_once 'connectionClass.php';
-    //session_start();
+    session_start();
 
     class DBFunctions {
         private $db;
@@ -18,15 +18,19 @@
             $query = "SELECT MAX(ID) FROM Users";
             $result = mysqli_query($this->db, $query);
             $row = mysqli_fetch_array($result);
-
-            $lastEntry = $row['ID'];
+            $lastEntry = 0;
+            if($row!=0){
+                $lastEntry = $row['ID'];
+            }else{
+                $lastEntry = 0;
+            }
             return $lastEntry;
         }
 
         //function to excecute Register task
         public function userRegister($userName, $emailID, $password, $name, $age, $height, $weight, $phonenumber, $address, $bloodgroup){
             $password = md5($password);
-            $lastEntry = $this->lastEntry();
+            $lastEntry = $this->lastEntry() + 1;
             $query = "INSERT INTO 
                     Users(ID, Email_ID, Password,
                     User_Name, Name, Age, Height,
