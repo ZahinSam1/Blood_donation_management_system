@@ -28,16 +28,16 @@
         }
 
         //function to excecute Register task
-        public function userRegister($userName, $emailID, $password, $name, $age, $height, $weight, $phonenumber, $address, $bloodgroup){
+        public function userRegister($userName, $emailID, $password, $name, $DoB, $height, $weight, $phonenumber, $address, $bloodgroup){
             $password = md5($password);
             $lastEntry = $this->lastEntry() + 1;
             $query = "INSERT INTO 
                     Users(ID, Email_ID, Password,
-                    User_Name, Name, Age, Height,
+                    User_Name, Name, DoB, Height,
                     Weight, Phone_Number, Address,
                     Blood_Group)
                     VALUES($lastEntry, '$emailID', $password, $userName,
-                    '$name', $age, $height, $weight, '$phonenumber',
+                    '$name', $DoB, $height, $weight, '$phonenumber',
                     '$address', '$bloodgroup')";
 
             $result = mysqli_query($this->db, $query) or die(mysqli_error($this->db));
@@ -46,12 +46,12 @@
         }
 
         //function to excecute Update task
-        public function updateInfo($userName, $emailID, $password, $name, $age, $height, $weight, $phonenumber, $address, $bloodgroup){
+        public function updateInfo($userName, $emailID, $password, $name, $DoB, $height, $weight, $phonenumber, $address, $bloodgroup){
             $query = "UPDATE Users SET 
                 Password= $password,
                 User_Name = $userName,
                 Name = '$name',
-                Age = $age,
+                Age = $DoB,
                 Height = $height,
                 Weight = $weight,
                 Phone_Number = $phonenumber,

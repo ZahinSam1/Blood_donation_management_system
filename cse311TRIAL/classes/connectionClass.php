@@ -3,7 +3,7 @@
         private $db_hostName = '127.0.0.1';
         private $db_userName = 'root';
         private $db_Password = '';
-        private $db_database = 'phptest';
+        private $db_database = 'life_source_foundation';
 
         //private $db_connect = mysqli_connect($db_hostName, $db_userName, $db_Password, $db_database) or die('Error Connecting to the database');
 

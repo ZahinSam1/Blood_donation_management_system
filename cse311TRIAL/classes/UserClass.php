@@ -9,12 +9,13 @@
         private $password = 'N/A';
         private $userName = 'N/A';
         private $name = 'N/A';
-        private $age = 'N/A';
         private $height = 'N/A';
         private $weight = 'N/A';
         private $phoneNumber = 'N/A';
         private $address = 'N/A';
         private $bloodGroup = 'N/A';
+        private $DoB = 'N/A';
+        private $gender = 'N/A';
 
         function __construct()
         {
@@ -37,8 +38,8 @@
         function getName(){
             return $this->name;
         }
-        function getAge(){
-            return $this->age;
+        function getGender(){
+            return $this->gender;
         }
         function getHeight(){
             return $this->height;
@@ -54,6 +55,9 @@
         }
         function getBloodGroup(){
             return $this->bloodGroup;
+        }
+        function getDob(){
+            return $this->DoB;
         }
 
         //setters
@@ -72,8 +76,8 @@
         function setName($name){
             $this->name = $name;
         }
-        function setAge($age){
-            $this->age = $age;
+        function setGender($gender){
+            $this->gender = $gender;
         }
         function setHeight($height){
             $this->height = $height;
@@ -90,6 +94,9 @@
         function setBloodGroup($bloodGroup){
             $this->bloodGroup = $bloodGroup;
         }
+        function setDoB($DoB){
+            $this->DoB = $DoB;
+        }
 
 
         //to pass the info to DB function class.php
@@ -97,7 +104,7 @@
             
             $this->func->userRegister($this->getUserName(),
                 $this->getemailID(), $this->getPassword(),
-                $this->getName(), $this->getAge(), $this->getHeight(),
+                $this->getName(), $this->getDob(), $this->getHeight(),
                 $this->getWeight(), $this->getPhoneNumber(),
                 $this->getAddress(), $this->getBloodGroup()
             );
@@ -107,7 +114,7 @@
             $this->func->updateInfo(
                 $this->getUserName(),
                 $this->getPassword(),
-                $this->getName(), $this->getAge(), $this->getHeight(),
+                $this->getName(), $this->getDob(), $this->getHeight(),
                 $this->getWeight(), $this->getPhoneNumber(),
                 $this->getAddress(), $this->getBloodGroup()
                 );
@@ -115,19 +122,21 @@
 
         public function getPreviousInfo($emailID){
 
-            $info = $this->func->getPreviousInfo($emailID);
+            $info = $this->func->getUserInfo($emailID);
             
             $this->setId($info['ID']);
             $this->setemailId($info['Email_ID']);
             $this->setUserName($info['User_Name']);
             $this->setName($info['Name']);
-            $this->setAge($info['Age']);
+            $this->setDoB($info['DoB']);
             $this->setHeight($info['Height']);
             $this->setWeight($info['weight']);
             $this->setPhoneNumber($info['Phone_Number']);
             $this->setAddress($info['Address']);
             $this->setBloodGroup($info['Blood_Group']);
         }
+
+
 
 
 
