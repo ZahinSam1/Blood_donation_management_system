@@ -1,6 +1,5 @@
-<?php 
-    require_once 'DBFunctionClass.php';
-    
+<?php  
+    require '../classes/connectionClass.php';
     class user{
         private $func;
 
@@ -122,7 +121,15 @@
 
         public function getPreviousInfo($emailID){
 
-            $info = $this->func->getUserInfo($emailID);
+            $con = new connection();
+            $db = $con->connect();
+
+            $query = "SELECT * FROM users WHERE Email_ID = '{$emailID}'";
+
+            //echo $_SESSION['emailID'];
+            $result = mysqli_query($db, $query);
+
+            $info = mysqli_fetch_array($result);
             
             $this->setId($info['ID']);
             $this->setemailId($info['Email_ID']);
@@ -130,10 +137,11 @@
             $this->setName($info['Name']);
             $this->setDoB($info['DoB']);
             $this->setHeight($info['Height']);
-            $this->setWeight($info['weight']);
+            $this->setWeight($info['Weight']);
             $this->setPhoneNumber($info['Phone_Number']);
             $this->setAddress($info['Address']);
             $this->setBloodGroup($info['Blood_Group']);
+            $this->setGender($info['Gender']);
         }
 
         public function popUpMsg($message){

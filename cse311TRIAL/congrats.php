@@ -24,8 +24,10 @@
                <li> <a href="donationform.html">DONATE BLOOD</a> </li>
                <li> <a href="recieveform.html">RECIEVE BLOOD</a> </li>
                <li> <p class="undersquare">________</p></li>
-               <li> <a href="SignUp.html">SIGN UP</a> </li>
-               <li> <a href="Login.html">LOGIN</a> </li>
+               <li id="signUp"> <a href="SignUp.html">SIGN UP</a> </li>
+               <li id="login"> <a href="Login.html">LOGIN</a> </li>
+               <li id="UserName"></li>
+               <li id="SignOut">SignOut</li>
            </ul>
        </nav>
     </div>
@@ -34,5 +36,18 @@
             <h1>Congratulations for signing up as a member of our organization. Hope you have a great time with us.</h1>
         </div>
     </div>
+    <?php 
+    
+    ?>
+    <script type="text/javascript">
+        var signUp = document.getElementById('signUp');
+        var login = document.getElementById('login');
+        var UserName = document.getElementsByid('UserName');
+        var signOut = document.getElementById('SignOut');
+
+
+
+
+    </script>
 </body>
 </html>
