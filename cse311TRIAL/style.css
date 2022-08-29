@@ -110,8 +110,9 @@ nav ul li a{
     position: fixed;
     height: fit-content;
     width: 100%;
-
+    background-position: center;
     bottom: 0;
+    background-size: cover;
     /* min-width: 100vh; */
     min-height: 100vh;
 }
@@ -312,8 +313,98 @@ nav ul li a{
 }
 
 /* donorpanel ends */
+/* donateblood/patientpanel begins */
+
+.donateform{
+    margin-top: 100px;
+    margin-left: 15%;
+    width: 800px;
+    background-color: rgba(139, 139, 139, 0.505);
+    color: #fff;
+    padding: 10px 0 10px 0;
+    text-align: center;
+    border-radius: 15px 15px 0 0;
+}
+.dform{
+    background-color: #ffffff7a;
+    width: 800px;
+    margin-left: 15%;
+}
+.dformm{
+    padding: 10px;
+}
+#dname{
+    width: 100%;
+    height: 100px;
+}
+.dname{
+    margin-left: 25px;
+    margin-top: 30px;
+    width: 125px;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+}
+.dfirstname{
+    position: relative;
+    left: 200px;
+    top: -37px;
+    line-height: 40px;
+    border-radius: 6px;
+    padding: 0 22px;
+    font-size: 16px;
+}
+.dlastname{
+    position: relative;
+    left: 417px;
+    top: -80px;
+    line-height: 40px;
+    border-radius: 6px;
+    padding: 0 22px;
+    font-size: 16px;
+    color: #555;
+}
+.dfirstlabel{
+    position: relative;
+    color: #e5e5e5;
+    text-transform: capitalize;
+    font-size: 14px;
+    left: 203px;
+    top: -45px;
+}
+.dlastlabel{
+    position: relative;
+    color: #e5e5e5;
+    text-transform: capitalize;
+    font-size: 14px;
+    left: 490px;
+    top: -76px;
+}
+.demail{
+    position: relative;
+    left: 200px;
+    top: -37px;
+    line-height: 40px;
+    width: 480px;
+    border-radius: 6px;
+    padding: 0 22px;
+    font-size: 16px;
+    color: #555;
+}
+.dphone{
+    position: relative;
+    left: 200px;
+    top: -37px;
+    line-height: 40px;
+    width: 95px;
+    border-radius: 6px;
+    padding: 0 22px;
+    font-size: 16px;
+    color: #555;
+}
 
 
+/* donateblood/patientpanel ends */
 
 /* money starts */
 
@@ -749,7 +840,29 @@ input[type="submit"]:hover{
 
 /*  login system ends */
 
+/* congrats start */
+.congratulations{
+    position: relative;
+    background-image: linear-gradient(to right, #ffffffe8, rgba(189, 183, 183, 0.626));
+    height: 50vh;
+    width: 80vh;
+    margin: 140px auto 30px;
+    border-radius: 10px;
+}
+.congrats{
+    font-size: 3vh;
+    padding: 50px;
+    font-weight: 1000;
+    background: -webkit-linear-gradient(right, rgb(184, 0, 0), #333);
+    /* got it from internet */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: blue;
+    text-align: center;
 
+}
+
+/* congrats end */
 /* signup system starts */
 
 
@@ -910,6 +1023,13 @@ input[type="submit"]:hover{
     -webkit-text-fill-color: transparent;
     color: blue;
     text-align: center;
+}
+.welcome h6{
+    font-size: 2.4vh;
+    padding: 5px;
+    font-weight: 100;    
+    color: rgb(0, 0, 0);
+    text-align: left;
 }
 
 /* footer starts */

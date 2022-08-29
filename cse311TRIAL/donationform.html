@@ -11,7 +11,6 @@
         <video autoplay loop muted plays-inline class="backvid">
             <source src="img/1videoplayback.mp4" type="video/mp4">
         </video>
-        <div class="navbar">
             <div class="navbar">
                 <nav>
                     <li> <div class="verline"></div></li>
@@ -29,10 +28,57 @@
                    </ul>
                </nav>
             </div>
-        </div>
-        <div>
-             
-        </div>
+
+            <div class="donateform"><h1>Blood Donation Form</h1></div>
+                <div class="dform">
+                    <form class="dformm">
+
+                        <div id="dname">
+                            <h2 class="dname">Name</h2>
+                            <input class="dfirstname" type="text" name="first_name"> <br>
+                            <label class="dfirstlabel">First Name</label>
+                            <input class="dlastname" type="text" name="last_name"> <br>
+                            <label class="dlastlabel">Last Name</label>
+                        </div>
+
+                        <h2 class="dname">Email Address</h2>
+                        <input class="demail" type="email" name="email_address">
+
+                        <h2 class="dname">Phone Number</h2>
+                        <input class="dphone" type="number" name="phone_no">
+
+                        <h2 class="dbloodtype">Blood Type</h2>
+
+                        <select name="blood_type" class="doption">
+                            <option disabled="disabled" selected="selected">--Choose BloodType</option>
+                            <option>A+</option>
+                            <option>B+</option>
+                            <option>O+</option>
+                            <option>AB+</option>
+                            <option>A-</option>
+                            <option>B-</option>
+                            <option>O-</option>
+                            <option>AB-</option>
+                        </select>
+
+                        <h2 id="ddonate">Did you donate blood before?</h2>
+                        <label class="dradio">
+                            <input class="dradio-one" type="radio" checked="checked" name="" >
+                            <span class="checkmark"></span>
+                            Yes
+                        </label>
+                        <label class="dradio">
+                            <input class="dradio-two" type="radio"  name="" >
+                            <span class="checkmark"></span>
+                            No
+                        </label>
+
+
+
+                            <button class="dsubmit">Register</button>
+                    </form>
+                </div>
+           
 
 </body>
 </html>
