@@ -2,7 +2,7 @@
 
     require '../classes/connectionClass.php';
 
-    $Email = $_POST['username'];
+    $Email = $_POST['email'];
     $password = $_POST['password'];
     $password = md5($password);
 
