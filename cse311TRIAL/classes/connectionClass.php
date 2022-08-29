@@ -5,8 +5,6 @@
         private $db_Password = '';
         private $db_database = 'life_source_foundation';
 
-        //private $db_connect = mysqli_connect($db_hostName, $db_userName, $db_Password, $db_database) or die('Error Connecting to the database');
-
         function __construct()
         {
 
@@ -25,9 +23,6 @@
         function getDBDatabase(){
             return $this->db_database;
         }
-        // function getDBConnection(){
-        //     return $this->db_connect;
-        // }
 
         //setters
         function setDBDatabase($db_database){
@@ -52,8 +47,8 @@
         }
     }
 
-    $connection = new connection();
-    $con = $connection->connect();
+    // $connection = new connection();
+    // $con = $connection->connect();
     // if($con){
     //     echo 'success';
     // }else{
