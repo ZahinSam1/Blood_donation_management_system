@@ -317,18 +317,20 @@ nav ul li a{
 
 .donateform{
     margin-top: 100px;
-    margin-left: 15%;
+    margin-left: 18%;
     width: 800px;
-    background-color: rgba(139, 139, 139, 0.505);
+    background-color: rgba(106, 27, 27, 0.847);
     color: #fff;
     padding: 10px 0 10px 0;
     text-align: center;
     border-radius: 15px 15px 0 0;
 }
 .dform{
-    background-color: #ffffff7a;
+    background-color: #ffffffcc;
     width: 800px;
-    margin-left: 15%;
+    margin-left: 18%;
+    margin-bottom: 40px;
+    border-radius: 0 0 15px 15px;
 }
 .dformm{
     padding: 10px;
@@ -341,9 +343,31 @@ nav ul li a{
     margin-left: 25px;
     margin-top: 30px;
     width: 125px;
-    color: white;
+    color: rgb(0, 0, 0);
     font-size: 18px;
     font-weight: 700;
+}
+.ddisease{
+    margin-left: 25px;
+    margin-top: 30px;
+    width: 500px;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    font-weight: 700;
+}
+#ddisease{
+    width: 100%;
+    height: 20vh;
+}
+.dddisease{
+    position: relative;
+    left: 450px;
+    top: -30px;
+    line-height: 40px;
+    border-radius: 6px;
+    padding: 0 22px;
+    font-size: 16px;
+    width: 250px;
 }
 #dd{
     width: 100%;
@@ -353,7 +377,7 @@ nav ul li a{
     margin-left: 25px;
     margin-top: 30px;
     width: 125px;
-    color: white;
+    color: rgb(0, 0, 0);
     font-size: 18px;
     font-weight: 700;
 }
@@ -365,7 +389,7 @@ nav ul li a{
     margin-left: 25px;
     margin-top: 0px;
     width: 125px;
-    color: white;
+    color: rgb(0, 0, 0);
     font-size: 18px;
     font-weight: 700;
 }
@@ -377,7 +401,7 @@ nav ul li a{
     margin-left: 25px;
     margin-top: 0px;
     width: 125px;
-    color: white;
+    color: rgb(0, 0, 0);
     font-size: 18px;
     font-weight: 700;
 }
@@ -398,11 +422,11 @@ nav ul li a{
     border-radius: 6px;
     padding: 0 22px;
     font-size: 16px;
-    color: #555;
+    color: rgb(0, 0, 0);
 }
 .dfirstlabel{
     position: relative;
-    color: #e5e5e5;
+    color: #000000;
     text-transform: capitalize;
     font-size: 14px;
     left: 203px;
@@ -410,7 +434,7 @@ nav ul li a{
 }
 .dlastlabel{
     position: relative;
-    color: #e5e5e5;
+    color: #000000;
     text-transform: capitalize;
     font-size: 14px;
     left: 490px;
@@ -428,7 +452,7 @@ nav ul li a{
 }
 .dmonthlabel{
     position: relative;
-    color: #e5e5e5;
+    color: #000000;
     text-transform: capitalize;
     font-size: 14px;
     left: 60px;
@@ -447,14 +471,14 @@ nav ul li a{
 }
 .ddaylabel{
     position: relative;
-    color: #e5e5e5;
+    color: #000000;
     text-transform: capitalize;
     font-size: 14px;
     left: 60px;
     top: -6px;
 }
 .dyear{
-position: relative;
+    position: relative;
     left: 200px;
     top: -37px;
     line-height: 40px;
@@ -466,7 +490,7 @@ position: relative;
 }
 .dyearlabel{
     position: relative;
-    color: #e5e5e5;
+    color: #000000;
     text-transform: capitalize;
     font-size: 14px;
     left: 60px;
@@ -481,7 +505,7 @@ position: relative;
     border-radius: 6px;
     padding: 0 22px;
     font-size: 16px;
-    color: #555;
+    color: rgb(0, 0, 0);
 }
 .dphone{
     position: relative;
@@ -492,7 +516,7 @@ position: relative;
     border-radius: 6px;
     padding: 0 22px;
     font-size: 16px;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
 }
 .daddress_road{
     position: relative;
@@ -502,11 +526,11 @@ position: relative;
     border-radius: 6px;
     padding: 0 22px;
     font-size: 16px;
-    color: #555;
+    color: rgb(0, 0, 0);
 }
 .daddresslabel_road{
     position: relative;
-    color: #e5e5e5;
+    color: #000000;
     text-transform: capitalize;
     font-size: 14px;
     left: 200px;
@@ -520,11 +544,11 @@ position: relative;
     border-radius: 6px;
     padding: 0 22px;
     font-size: 16px;
-    color: #555;
+    color: rgb(0, 0, 0);
 }
 .daddresslabel_house{
     position: relative;
-    color: #e5e5e5;
+    color: #000000;
     text-transform: capitalize;
     font-size: 14px;
     left: 490px;
@@ -538,11 +562,11 @@ position: relative;
     border-radius: 6px;
     padding: 0 22px;
     font-size: 16px;
-    color: #555;
+    color: rgb(0, 0, 0);
 }
 .daddresslabel_zip{
     position: relative;
-    color: #e5e5e5;
+    color: #000000;
     text-transform: capitalize;
     font-size: 14px;
     left: 210px;
@@ -556,11 +580,11 @@ position: relative;
     border-radius: 6px;
     padding: 0 22px;
     font-size: 16px;
-    color: #555;
+    color: rgb(0, 0, 0);
 }
 .daddresslabel_city{
     position: relative;
-    color: #e5e5e5;
+    color: #000000;
     text-transform: capitalize;
     font-size: 14px;
     left: 500px;
@@ -577,7 +601,7 @@ position: relative;
 }
 .dheightlabel{
     position: relative;
-    color: #e5e5e5;
+    color: #000000;
     text-transform: capitalize;
     font-size: 14px;
     left: 203px;
@@ -591,11 +615,11 @@ position: relative;
     border-radius: 6px;
     padding: 0 22px;
     font-size: 16px;
-    color: #555;
+    color: rgb(0, 0, 0);
 }
 .dweightlabel{
     position: relative;
-    color: #e5e5e5;
+    color: #000000;
     text-transform: capitalize;
     font-size: 14px;
     left: 490px;
@@ -605,7 +629,7 @@ position: relative;
     margin-left: 25px;
     margin-top: 30px;
     width: 125px;
-    color: white;
+    color: rgb(0, 0, 0);
     font-size: 18px;
     font-weight: 700;
 }
@@ -619,7 +643,7 @@ position: relative;
     border-radius: 6px;
     padding: 0 22px;
     font-size: 16px;
-    color: #555;
+    color: rgb(0, 0, 0);
     outline: none;
     overflow: hidden;
 }
@@ -628,7 +652,7 @@ position: relative;
 }
 #ddonate{
     margin-left: 25px;
-    color: white;
+    color: rgb(0, 0, 0);
     font-size: 18px;
 }
 .dradio{
@@ -637,7 +661,7 @@ position: relative;
     font-size: 25px;
     margin-left: 25px;
     margin-top: 15px;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 .dradio input{
     width: 20px;
@@ -657,7 +681,7 @@ position: relative;
     color: white;
     cursor: pointer;
     transition: 0.25px;
-    margin-left: 250px;
+    margin-left: 200px;
 }
 .dsubmit:hover{
     background-color: rgb(18, 1, 1);
