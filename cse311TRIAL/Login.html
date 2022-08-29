@@ -31,23 +31,15 @@
     <div>
         <div class="centerlogin">
         <h1 class="login">Log In:</h1>
-        <form method="post" class="post">
-            <!-- <br>
-            <h2>Are you a:</h2>
-            <br> -->
-            <!-- <div class="btn-group">
-                <button>Volunteer</button>
-                <button>Patient</button>
-                <button>Donor</button>
-                <button>Admin</button>
-            </div> -->
+        <form method="post" class="post" action="action/LoginCheck.php">
+
             <div class="textfield">
-                <input type="text" required>
+                <input type="text" required name="username">
                 <span></span>
                 <label>Username</label>
             </div>
             <div class="textfield">
-                <input type="password" required>
+                <input type="password" required name="password">
                 <label>Password</label>
             </div>
             <div class="pass">Forgot Password?</div>
