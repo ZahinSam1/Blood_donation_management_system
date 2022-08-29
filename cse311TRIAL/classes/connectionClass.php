@@ -9,7 +9,7 @@
 
         function __construct()
         {
-            
+
         }
 
         //getters
@@ -51,6 +51,14 @@
             mysqli_close($this->connect());
         }
     }
+
+    $connection = new connection();
+    $con = $connection->connect();
+    // if($con){
+    //     echo 'success';
+    // }else{
+    //     echo 'failed';
+    // }
 
 
 

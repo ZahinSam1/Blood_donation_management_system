@@ -1,12 +1,12 @@
 <?php
-    require_once 'connectionClass.php';
+    require 'connectionClass.php';
     session_start();
 
-    class DBFunctions {
-        private $db;
+    
+    class DBFunctions extends connection{
+        
         function __construct()
         {
-            $db = new connection();
         }
 
         function __destruct()
@@ -28,26 +28,25 @@
         }
 
         //function to excecute Register task
-        public function userRegister($userName, $emailID, $password, $name, $DoB, $height, $weight, $phonenumber, $address, $bloodgroup){
+        public function userRegister($userName, $emailID, $password){
+            $db = $this->connect();
             $password = md5($password);
-            $lastEntry = $this->lastEntry() + 1;
-            $query = "INSERT INTO 
-                    Users(ID, Email_ID, Password,
-                    User_Name, Name, DoB, Height,
-                    Weight, Phone_Number, Address,
-                    Blood_Group)
-                    VALUES($lastEntry, '$emailID', $password, $userName,
-                    '$name', $DoB, $height, $weight, '$phonenumber',
-                    '$address', '$bloodgroup')";
+            //$lastEntry = $this->lastEntry() + 1;
+            $query = "INSERT INTO users(Email_ID, Password, User_Name) VALUES(\'$emailID\', \'$password\', \'$userName\')";
 
-            $result = mysqli_query($this->db, $query) or die(mysqli_error($this->db));
+            $result = mysqli_query($db, $query) or die(mysqli_error($this->db));
 
             return $result;
+            // if(mysqli_query($this->db, $query)){
+            //     echo "<script>alert('Register Successful')</script>";
+            // }else{
+            //     die(mysqli_error($this->db));
+            // }
         }
 
         //function to excecute Update task
         public function updateInfo($userName, $emailID, $password, $name, $DoB, $height, $weight, $phonenumber, $address, $bloodgroup){
-            $query = "UPDATE Users SET 
+            $query = "UPDATE users SET 
                 Password= $password,
                 User_Name = $userName,
                 Name = '$name',
@@ -60,10 +59,10 @@
                 WHERE Email_ID = '$emailID'";
         }
         //function to excecute login task
-        public function login($emailID, $password){
-            
-            $query = "SELECT * FROM users WHERE Email_ID = '$emailID' AND Password = 'md5($password)'";
-            $result = mysqli_query($this->db, $query);
+        public function login($username, $password){
+            $db = $this->connect(); 
+            $query = "SELECT * FROM users WHERE User_Name = '$username' AND Password = 'md5($password)'";
+            $result = mysqli_query($db, $query);
 
             $user_data = mysqli_fetch_array($result);
             $no_row = mysqli_num_rows($result);
@@ -81,8 +80,9 @@
         }
 
         public function isUserExist($emailID){
-            $query = "SELECT * FROM Users WHERE Email_ID = $emailID";
-            $result = mysqli_query($this->db, $query);
+            $db = $this->connect();
+            $query = "SELECT * FROM users WHERE Email_ID = $emailID";
+            $result = mysqli_query($db, $query);
             $row = mysqli_num_rows($result);
             echo $row;
             if($row > 0){
