@@ -18,8 +18,15 @@
     if($row==1){
         echo "('Login Successful')";
         $_SESSION['emailID'] = $Email;
+        header("location:profileEntry.php");
     }else{
-        echo "('Username / Password doesn't match')";
+        echo "<script><br>
+            deleter window.alert; 
+            <br>
+            alert('Username / Password doesn't match');
+            <br>
+            </script>";
+        header
     }
 
 

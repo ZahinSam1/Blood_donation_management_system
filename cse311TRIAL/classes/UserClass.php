@@ -9,8 +9,8 @@
         private $password = 'N/A';
         private $userName = 'N/A';
         private $name = 'N/A';
-        private $height = 'N/A';
-        private $weight = 'N/A';
+        private $height = 0.00;
+        private $weight = 0.00;
         private $phoneNumber = 'N/A';
         private $address = 'N/A';
         private $bloodGroup = 'N/A';
@@ -136,14 +136,13 @@
             $this->setBloodGroup($info['Blood_Group']);
         }
 
-
-
-
-
-        function __destruct()
-        {
-            
+        public function popUpMsg($message){
+            echo '<script type="text/javascript">';
+            echo 'delete window.alert;';
+            echo ' alert("$message");';
+            echo '</script>';
         }
+
     }
 
 

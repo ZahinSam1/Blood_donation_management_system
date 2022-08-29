@@ -1,6 +1,7 @@
 <?php
-    require 'connectionClass.php';
     session_start();
+    require 'connectionClass.php';
+    
 
     
     class DBFunctions extends connection{
