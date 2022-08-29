@@ -1,10 +1,12 @@
 <?php
-
+    session_start();
     require '../classes/connectionClass.php';
 
     $Email = $_POST['email'];
     $password = $_POST['password'];
     $password = md5($password);
+
+    //$_SESSION['emailID'] = $Email;
 
     $con = new connection();
     $db = $con->connect();
@@ -15,6 +17,7 @@
 
     if($row==1){
         echo "('Login Successful')";
+        $_SESSION['emailID'] = $Email;
     }else{
         echo "('Username / Password doesn't match')";
     }

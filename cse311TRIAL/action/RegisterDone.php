@@ -20,10 +20,12 @@
 
         $result = mysqli_query($db, $query);
         if($result){
-            echo "<script>alert('successfully Registered!')</script>";
+            echo "<script>successfully Registered!</script>";
             header("location:../Login.html");
         }else{
-            echo "<script>alert('Failed! This Email is taken! User Another')</script>";
+            echo "Failed! This Email is taken! User Another";
         }
+
+    $con->close();
 
 ?>
