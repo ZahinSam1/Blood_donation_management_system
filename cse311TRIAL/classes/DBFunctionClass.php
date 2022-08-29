@@ -1,5 +1,5 @@
 <?php
-    session_start();
+    //session_start();
     require 'connectionClass.php';
     
 
@@ -69,10 +69,10 @@
             $no_row = mysqli_num_rows($result);
 
             if($no_row == 1){
-                $_SESSION['login'] = true;
-                $_SESSION['uid'] = $user_data['ID'];
-                $_SESSION['username'] = $user_data['User_Name'];
-                $_SESSION['email'] = $user_data['Email_ID'];
+                // $_SESSION['login'] = true;
+                // $_SESSION['uid'] = $user_data['ID'];
+                // $_SESSION['username'] = $user_data['User_Name'];
+                // $_SESSION['email'] = $user_data['Email_ID'];
                 return true;
             }else{
                 return false;
