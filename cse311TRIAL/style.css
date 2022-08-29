@@ -110,9 +110,7 @@ nav ul li a{
     position: fixed;
     height: fit-content;
     width: 100%;
-    /* height: auto;
-    width: auto; */
-    right: 0;
+
     bottom: 0;
     /* min-width: 100vh; */
     min-height: 100vh;
