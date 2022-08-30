@@ -16,20 +16,19 @@
     $row = mysqli_num_rows($result);
 
     if($row==1){
-        echo "('Login Successful')";
+        
         $_SESSION['emailID'] = $Email;
-        header("location:profileEntry.php");
-    }else{
-        echo "<script><br>
-            deleter window.alert; 
-            <br>
-            alert('Username / Password doesn't match');
-            <br>
-            </script>";
-        header
-    }
-
-
-
-
-?>
+        $_SESSION['logged_in'] = true;
+    ?>
+        <script>
+        alert('Login Successful');
+        window.location.href='../congrats.php';
+        </script>
+    <?php 
+    }else { ?>
+        <script>
+            alert('Username / Password doesnt match');
+            window.location.href='../login.html';
+            </script>
+    
+    <?php } ?>
