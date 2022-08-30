@@ -81,7 +81,11 @@
         if($condition == 'OK'){
             $userExist = $donor->isUserExist($email);
             if($userExist==false){
-                $donor->insertIntoDatabase();
+                $donor->DinsertIntoDatabase();
+                echo "<script language=javascript>
+                alert('Thank you for you kind concern for others!!');
+                window.location.href = '../donationform.php';
+            </script>";
             }
             else if($condition != 'OK'){
                 echo "<script language=javascript>
