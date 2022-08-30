@@ -1336,36 +1336,63 @@ input[type="submit"]:hover{
 .welcomeback{
     position: relative;
     background-image: linear-gradient(to right, #ffffffe8, rgba(189, 183, 183, 0.626));
-    height: 110vh;
-    width: 140vh;
-    margin: 25px auto 30px;
-    border-radius: 10px;
+    height: 200vh;
+    width: 80vh;
+    margin-left: 15%;
+    border-radius: 20px;
+    
 }
 .welcome{
     margin-top: 130px;
-    margin-left: 12%;
     margin-right: 12%;
     padding: 10px;
-    line-height: 35px;
 }
 .welcome h1{
     font-size: 7vh;
     padding: 10px;
     font-weight: 1000;
     background: -webkit-linear-gradient(right, rgb(184, 0, 0), #333);
-    /* got it from internet */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    color: blue;
     text-align: center;
 }
+.welcome h2{
+    background-color: rgba(0, 0, 0, 0.057);
+    border-radius: 20px;
+    font-size: 3vh;
+    padding: 10px;
+    font-weight: 1000;
+    text-align: left;
+    margin: 42px;
+}
+.welcome h2 a{
+    color: rgb(38, 62, 149);
+}
 .welcome h6{
-    font-size: 2.4vh;
-    padding: 5px;
+    font-size: 2.5vh;
+    padding: 25px;
     font-weight: 100;    
     color: rgb(0, 0, 0);
-    text-align: left;
+    margin: 22px;
 }
+.proinfo{
+    position: absolute;
+    background-image: linear-gradient(to right, #ffffffb3, rgba(189, 183, 183, 0.626));
+    padding: 60px;
+    margin-left: 60%;
+    margin-top: -110.1%;
+    margin-right: 5%;
+    border-radius: 20px;
+    box-shadow: 10px 0px 20px rgba(59, 59, 59, 0.374);
+}
+/* .invidiv{
+    background-color: rgba(75, 17, 17, 0.269);
+    padding: 20px;
+    margin-left: 55%;
+    margin-top: -60%;
+    margin-right: 10%;
+    border-radius: 20px;
+} */
 
 /* footer starts */
 footer{

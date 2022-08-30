@@ -35,20 +35,98 @@
         <!-- after logging in they reach the welcome page -->
         <div class="welcomeback">
             <div class="welcome">
+
                 <h1>Welcome back</h1>
-                <h6>Would you like to
-                    <br>
+
+                <h2><a href="Bloodinfo.html">Check Blood</a></h2>
+                <h2><a href="Patient.html">Patient Info</a></h2>
+                <h2><a href="volunteer.html">Volunteer Info</a></h2>
+
+                
+                <h6>Would you also like to:
+                    <br><br>
                     <a href="donationform.html">Donate Blood To People In Need?</a>
-                    <br>
+                    <br><br>
                     <a href="recieveform.html">In Need Of Blood?</a>
-                    <br>
+                    <br><br>
                     <a href="money.html">Contribute To Our Organization?</a>
                     <br>
     
                 </h6>
+
             </div>
-    
         </div>
+
+            <div class="proinfo">
+                <!-- <div class="invidiv"></div> -->
+                <div class="welcome"><h1>Profile Information</h1></div>
+                    <form >
+                        <div><br>
+                            <h2>Name</h2>
+                            <input type="text" name="first_name"> <br>
+                            <label >First Name</label>
+                            <br>
+                            <br>
+                            <input type="text" name="last_name"> <br>
+                            <label >Last Name</label><br><br>
+                        </div>
+                        <div>
+                            <h2>Date Of Birth</h2>
+                            <input type="text" name="month"> 
+                            <label >Month</label>
+                            <br><br>
+                            <input type="number" name="day"> 
+                            <label >Day</label>
+                            <br><br>
+                            <input type="number" name="year">
+                            <label >Year</label><br>
+                        </div><br>
+                        <h2>Email Address</h2>
+                        <input type="email" name="email_address">
+                        <br><br>
+
+                        <h2>Phone Number</h2>
+                        <input type="number" name="phone_no">
+                        <br>
+                        <br>
+                        <div>
+                            <h2>Address</h2>
+                            <input type="number" name="address">
+                            <label >Road Number</label><br>
+                            <br>
+                            <input  type="number" name="address">
+                            <label >House Number</label><br>
+                            <br>
+                            <input  type="number" name="address">
+                            <label >Zip Code</label><br>
+                            <br>
+                            <input type="text" name="address">
+                            <label >City</label>
+                        </div>
+                        <br>
+                        
+
+                        <h2>Blood Type</h2>
+
+                        <select name="blood_type">
+                            <option disabled="disabled" selected="selected">--Choose BloodType</option>
+                            <option>A+</option>
+                            <option>B+</option>
+                            <option>O+</option>
+                            <option>AB+</option>
+                            <option>A-</option>
+                            <option>B-</option>
+                            <option>O-</option>
+                            <option>AB-</option>
+                        </select>
+
+                
+                    </form>
+                </div>
+
+                
+           
+    
         
     </div>
 </body>
