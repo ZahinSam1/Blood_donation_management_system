@@ -64,7 +64,15 @@
     $donor->setConditionStatus($condition);
 
     if($condition = 'OK'){
-        $donor->insertIntoDatabase();
+        $userExist = $donor->isUserExist($email);
+        if($userExist==false){
+            $donor->insertIntoDatabase();
+        }else{ 
+            echo '<script language=javascript>
+            alert("Error! This Email is already taken!");
+        </script>';
+        }
+        
     }
 
 

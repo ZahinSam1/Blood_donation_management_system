@@ -113,6 +113,8 @@
             '{$this->getAddress()}',
             '{$this->getBloodGroup()}',
             '{$this->getGender()}')";
+
+            mysqli_query($db, $query);
             
         }
 
@@ -157,6 +159,21 @@
             $this->setAddress($info['Address']);
             $this->setBloodGroup($info['Blood_Group']);
             $this->setGender($info['Gender']);
+        }
+
+        public function isUserExist($emailID){
+            $con = new connection();
+            $db = $con->connect();
+
+            $query = "SELECT Email_ID FROM users WHERE Email_ID = '{$emailID}'";
+            $result = mysqli_query($db, $query);
+
+            $row = mysqli_num_rows($result);
+            $userExist = true;
+            if($row==1){
+                $userExist = false;
+            }
+            return $userExist;
         }
 
 
