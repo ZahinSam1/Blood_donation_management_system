@@ -26,12 +26,12 @@
     $address = $roadNo . ', ' . $houseNo . ', ' . $zip . ', ' . $city . '. ';
      
 
-    $ft = $_POST['ft'];
-    $inch = $_POST['inch'];
+    $ft = $_POST['dfeet'];
+    $inch = $_POST['dinch'];
     $height = heightConvert($ft, $inch);
     $minHeight = 1.4732;
 
-    $weight;
+    $weight = $_POST[''];
     $minWeight = 50;
     $condition = 'NOT OK';
     if($height > $minHeight && $weight > $minWeight){

@@ -11,12 +11,14 @@
     $con = new connection();
     $db = $con->connect();
 
-    $query = "SELECT Email_ID, Password FROM users WHERE Email_ID = '$Email' AND Password = '$password'";
+    $query = "SELECT Email_ID, Password, User_Name FROM users WHERE Email_ID = '$Email' AND Password = '$password'";
     $result = mysqli_query($db, $query);
+    
     $row = mysqli_num_rows($result);
 
     if($row==1){
-        
+        $info = mysqli_fetch_array($result);
+        $_SESSION['username'] = $info['User_Name'];    
         $_SESSION['emailID'] = $Email;
         $_SESSION['logged_in'] = true;
         echo " <script language=javascript>
