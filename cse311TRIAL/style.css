@@ -125,7 +125,15 @@ nav ul li a{
     width: 140vh;
     margin: 25px auto 30px;
     border-radius: 10px;
-    
+}
+.aboutusbackk{
+    position: relative;
+    background-image: linear-gradient(to right, #ffffffe8, rgba(189, 183, 183, 0.626));
+    height: 100%;
+    width: 100vh;
+    margin-top: 10%;
+    margin-left: 23%;
+    border-radius: 10px;
 }
 
 .aboutus {
@@ -155,6 +163,39 @@ nav ul li a{
     text-align: left;
 }
 /* about us end */
+/* blood table */
+table, th, td {
+    border:1px solid black;
+    text-align: center;
+    box-shadow: 10px 10px 20px 3px rgba(0, 0, 0, 0.123);
+    background-image: linear-gradient(to right, #e2d3d385, rgba(179, 105, 105, 0.212));
+  }
+.btable {
+    font-size: 5vh;
+    padding: 20px;
+    text-align: center;
+    background: -webkit-linear-gradient(right, rgb(184, 0, 0), #333);
+    /* got it from internet */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.bloodtable{
+    position: relative;
+    margin-top: 10%;
+    margin-left: 20%;
+    height: 20vh;
+    width: 60vh;
+    text-align: center;
+}
+.bcol{
+    font-size: 3vh;
+    padding: 20px;
+    text-align: left;
+}
+
+/* blood table ends */
+
+
 .longline{
     left: -20px;
     top: 115px;
@@ -1338,7 +1379,8 @@ input[type="submit"]:hover{
     background-image: linear-gradient(to right, #ffffffe8, rgba(189, 183, 183, 0.626));
     height: 200vh;
     width: 80vh;
-    margin-left: 15%;
+    margin-left: 10%;
+    margin-top: 20px;
     border-radius: 20px;
     
 }
@@ -1376,23 +1418,35 @@ input[type="submit"]:hover{
     margin: 22px;
 }
 .proinfo{
-    position: absolute;
-    background-image: linear-gradient(to right, #ffffffb3, rgba(189, 183, 183, 0.626));
+    position: relative;
+    background-image: linear-gradient(to right, #ffffffe8, rgba(189, 183, 183, 0.626));
+    height: auto;
+    width: 50vh;
+    margin-left: 10%;
+    margin-top: 20px;
+    border-radius: 20px;
+    left: 600px;
+    top: -1410px;
     padding: 60px;
-    margin-left: 60%;
-    margin-top: -110.1%;
-    margin-right: 5%;
-    border-radius: 20px;
-    box-shadow: 10px 0px 20px rgba(59, 59, 59, 0.374);
 }
-/* .invidiv{
+.proinfoo{
+    font-size: 3vh;
+    padding: 10px;
+    font-weight: 1000;
+    background: -webkit-linear-gradient(right, rgb(184, 0, 0), #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    justify-content: center;
+
+}
+.invidiv{
     background-color: rgba(75, 17, 17, 0.269);
-    padding: 20px;
-    margin-left: 55%;
-    margin-top: -60%;
-    margin-right: 10%;
+
     border-radius: 20px;
-} */
+    height: 200px;
+    width: 200px;
+}
 
 /* footer starts */
 footer{

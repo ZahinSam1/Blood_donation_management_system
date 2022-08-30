@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,16 +8,17 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <video autoplay loop muted plays-inline class="backvid">
         <source src="img/1videoplayback.mp4" type="video/mp4">
     </video>
-    
+
     <div class="navbar">
         <nav>
             <li> <div class="verline"></div></li>
 
-            <a href="index.php"><img src="img/LifeSource Foundation-1 (2).png" alt="logo" height="50px" width="200px"></a> 
+            <a href="index.html"><img src="img/LifeSource Foundation-1 (2).png" alt="logo" height="50px" width="200px"></a> 
            <ul>
             <?php session_start();
                 $userLoggedIn = false;
@@ -52,7 +54,7 @@
                             }
                             
                         ?>
-                    </a> 
+                    </a>
                 </li>
                <li id="login"> 
                     <a href="Login.php">LOGIN
@@ -77,11 +79,11 @@
                             }
                             
                         ?>
-                    </a> 
+                    </a>
                 </li>
-               <li id="UserName" onclick="profileMenu()">
+                <li id="UserName" onclick="profileMenu()">
                     <a href="">
-                    <?php
+                        <?php
                             if($userLoggedIn){
                                 
                                 echo "
@@ -107,8 +109,8 @@
                         ?>
                     </a>
                 </li>
-               <li id="SignOut" onclick="logOut()">Log Out
-               <?php
+                <li id="SignOut" onclick="logOut()">Log Out
+                    <?php
                     if($userLoggedIn){
                         echo "
                             <script language=javascript>
@@ -131,9 +133,9 @@
                     }
                             
                 ?>
-               </li>
-           </ul>
-       </nav>
+                </li>
+            </ul>
+        </nav>
     </div>
     <div class="congratulations">
         <div class="congrats">
@@ -146,24 +148,21 @@
     
     ?>
     <script language=javascript>
-        var signUp = document.getElementById("signUp");
-        var login = document.getElementById("login");
-        var UserName = document.getElementsByid("UserName");
-        var signOut = document.getElementById("SignOut");
-        
-        //var isLoggedin = <?php //echo $_SESSION['logged_in'] ?>
+    var signUp = document.getElementById("signUp");
+    var login = document.getElementById("login");
+    var UserName = document.getElementsByid("UserName");
+    var signOut = document.getElementById("SignOut");
 
-        //UserName.style.visibility = "hidden";
-        //signOut.style.visibility = "hidden";
+    //var isLoggedin = <?php //echo $_SESSION['logged_in'] ?>
 
-        //if(isLoggedin){
-            signUp.style.visibility = 'hidden';
-            //login.style.visibility = "hidden";
-        //}
+    //UserName.style.visibility = "hidden";
+    //signOut.style.visibility = "hidden";
 
-
-
-
+    //if(isLoggedin){
+    signUp.style.visibility = 'hidden';
+    //login.style.visibility = "hidden";
+    //}
     </script>
 </body>
+
 </html>

@@ -21,7 +21,7 @@
                     <div class="verline"></div>
                 </li>
 
-                <a href="index.html"><img src="img/LifeSource Foundation-1 (2).png" alt="logo" height="50px"
+                <a href="index.php"><img src="img/LifeSource Foundation-1 (2).png" alt="logo" height="50px"
                         width="200px"></a>
                 <ul>
                     <?php session_start();
@@ -31,16 +31,16 @@
                         $uName = $_SESSION['username'];
                     }
                 ?>
-                    <li> <a href="index.html">HOME</a> </li>
-                    <li> <a href="about.html">ABOUT US</a></li>
-                    <li> <a href="donorpanel.html">INFORMATION</a> </li>
-                    <li> <a href="donationform.html">DONATE BLOOD</a> </li>
-                    <li> <a href="recieveform.html">RECIEVE BLOOD</a> </li>
+                    <li> <a href="index.php">HOME</a> </li>
+                    <li> <a href="about.php">ABOUT US</a></li>
+                    <li> <a href="donorpanel.php">INFORMATION</a> </li>
+                    <li> <a href="donationform.php">DONATE BLOOD</a> </li>
+                    <li> <a href="recieveform.php">RECIEVE BLOOD</a> </li>
                     <li>
                         <p class="undersquare">________</p>
                     </li>
                     <li id="signUp">
-                        <a href="SignUp.html">SIGN UP
+                        <a href="SignUp.php">SIGN UP
                             <?php
                                 if($userLoggedIn){
                                     echo "
@@ -63,7 +63,7 @@
                         </a>
                     </li>
                     <li id="login">
-                        <a href="Login.html">LOGIN
+                        <a href="Login.php">LOGIN
                             <?php
                                 if($userLoggedIn){
                                     echo "
@@ -98,7 +98,7 @@
                                             uName.innerHTML = " . json_encode($uName) . ";
                                             uName.style.color = 'white';
                                             function profileMenu(){
-                                                window.location.href='../profile.html';
+                                                window.location.href='../profile.php';
                                             }
                                         </script>
                                     ";
@@ -146,22 +146,23 @@
         </div>
         <!-- after logging in they reach the welcome page -->
         <div class="welcomeback">
+
             <div class="welcome">
 
                 <h1>Welcome back</h1>
 
-                <h2><a href="Bloodinfo.html">Check Blood</a></h2>
-                <h2><a href="Patient.html">Patient Info</a></h2>
-                <h2><a href="volunteer.html">Volunteer Info</a></h2>
+                <h2><a href="Bloodinfo.php">Check Blood</a></h2>
+                <h2><a href="Patient.php">Patient Info</a></h2>
+                <h2><a href="volunteer.php">Volunteer Info</a></h2>
 
 
                 <h6>Would you also like to:
                     <br><br>
-                    <a href="donationform.html">Donate Blood To People In Need?</a>
+                    <a href="donationform.php">Donate Blood To People In Need?</a>
                     <br><br>
-                    <a href="recieveform.html">In Need Of Blood?</a>
+                    <a href="recieveform.php">In Need Of Blood?</a>
                     <br><br>
-                    <a href="money.html">Contribute To Our Organization?</a>
+                    <a href="money.php">Contribute To Our Organization?</a>
                     <br>
 
                 </h6>
@@ -170,8 +171,9 @@
         </div>
 
         <div class="proinfo">
-            <!-- <div class="invidiv"></div> -->
+
             <div class="proinfoo">
+
                 <h1>Profile Information</h1>
             </div>
             <form>

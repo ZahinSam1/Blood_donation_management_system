@@ -20,7 +20,7 @@
                 <div class="verline"></div>
             </li>
 
-            <a href="index.html"><img src="img/LifeSource Foundation-1 (2).png" alt="logo" height="50px"
+            <a href="index.php"><img src="img/LifeSource Foundation-1 (2).png" alt="logo" height="50px"
                     width="200px"></a>
             <ul>
                 <?php 
@@ -31,16 +31,16 @@
                     $uName = $_SESSION['username'];
                 }
             ?>
-                <li> <a href="index.html">HOME</a> </li>
-                <li> <a href="about.html">ABOUT US</a></li>
-                <li> <a href="donorpanel.html">INFORMATION</a> </li>
-                <li> <a href="donationform.html">DONATE BLOOD</a> </li>
-                <li> <a href="recieveform.html">RECIEVE BLOOD</a> </li>
+                <li> <a href="index.php">HOME</a> </li>
+                <li> <a href="about.php">ABOUT US</a></li>
+                <li> <a href="donorpanel.php">INFORMATION</a> </li>
+                <li> <a href="donationform.php">DONATE BLOOD</a> </li>
+                <li> <a href="recieveform.php">RECIEVE BLOOD</a> </li>
                 <li>
                     <p class="undersquare">________</p>
                 </li>
                 <li id="signUp">
-                    <a href="SignUp.html">SIGN UP
+                    <a href="SignUp.php">SIGN UP
                         <?php
                             if($userLoggedIn){
                                 echo "
@@ -63,7 +63,7 @@
                     </a>
                 </li>
                 <li id="login">
-                    <a href="Login.html">LOGIN
+                    <a href="Login.php">LOGIN
                         <?php
                             if($userLoggedIn){
                                 echo "
@@ -98,7 +98,7 @@
                                         uName.innerHTML = " . json_encode($uName) . ";
                                         uName.style.color = 'white';
                                         function profileMenu(){
-                                            window.location.href='../profile.html';
+                                            window.location.href='../profile.php';
                                         }
                                     </script>
                                 ";
@@ -179,7 +179,7 @@
                 <br>
                 <input type="submit" value="SignUp">
                 <div class="signuplink"> Already got an account?
-                    <a href="Login.html">Login</a>
+                    <a href="Login.php">Login</a>
                     <br>
                 </div>
             </form>
