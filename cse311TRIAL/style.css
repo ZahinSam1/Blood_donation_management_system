@@ -670,6 +670,7 @@ nav ul li a{
     cursor: pointer;
     outline: none;
 }
+
 .dsubmit{
     background-color: #ad0c0ccd;
     display: block;
@@ -1145,7 +1146,17 @@ input[type="submit"]:hover{
     text-align: center;
 
 }
-
+.accept{
+    font-size: 1.8vh;
+    padding: 50px;
+    font-weight: 1000;
+    background: -webkit-linear-gradient(right, rgb(184, 0, 0), #333);
+    /* got it from internet */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: blue;
+    text-align: center;
+}
 /* congrats end */
 /* signup system starts */
 
