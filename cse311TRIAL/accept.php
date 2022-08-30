@@ -97,7 +97,7 @@
                                         uName.innerHTML = " . json_encode($uName) . ";
                                         uName.style.color = 'white';
                                         function profileMenu(){
-                                            window.location.href='../profile.php';
+                                            window.location.href='../welcome.php';
                                         }
                                     </script>
                                 ";

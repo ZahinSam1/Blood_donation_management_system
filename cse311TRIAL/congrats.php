@@ -16,24 +16,29 @@
 
     <div class="navbar">
         <nav>
-            <li> <div class="verline"></div></li>
+            <li>
+                <div class="verline"></div>
+            </li>
 
-            <a href="index.html"><img src="img/LifeSource Foundation-1 (2).png" alt="logo" height="50px" width="200px"></a> 
-           <ul>
-            <?php session_start();
+            <a href="index.html"><img src="img/LifeSource Foundation-1 (2).png" alt="logo" height="50px"
+                    width="200px"></a>
+            <ul>
+                <?php session_start();
                 $userLoggedIn = false;
                 if(isset($_SESSION['logged_in'])){
                     $userLoggedIn = true;
                     $uName = $_SESSION['username'];
                 }
             ?>
-               <li> <a href="index.php">HOME</a> </li>
-               <li> <a href="about.php">ABOUT US</a></li>
-               <li> <a href="donorpanel.php">INFORMATION</a> </li>
-               <li> <a href="donationform.php">DONATE BLOOD</a> </li>
-               <li> <a href="recieveform.php">RECIEVE BLOOD</a> </li>
-               <li> <p class="undersquare">________</p></li>
-               <li id="signUp"> 
+                <li> <a href="index.php">HOME</a> </li>
+                <li> <a href="about.php">ABOUT US</a></li>
+                <li> <a href="donorpanel.php">INFORMATION</a> </li>
+                <li> <a href="donationform.php">DONATE BLOOD</a> </li>
+                <li> <a href="recieveform.php">RECIEVE BLOOD</a> </li>
+                <li>
+                    <p class="undersquare">________</p>
+                </li>
+                <li id="signUp">
                     <a href="SignUp.php">SIGN UP
                         <?php
                             if($userLoggedIn){
@@ -56,9 +61,9 @@
                         ?>
                     </a>
                 </li>
-               <li id="login"> 
+                <li id="login">
                     <a href="Login.php">LOGIN
-                    <?php
+                        <?php
                             if($userLoggedIn){
                                 echo "
                                     <script language=javascript>
@@ -92,7 +97,7 @@
                                         uName.innerHTML = " . json_encode($uName) . ";
                                         uName.style.color = 'white';
                                         function profileMenu(){
-                                            window.location.href='../profile.php';
+                                            window.location.href='../welcome.php';
                                         }
                                     </script>
                                 ";
