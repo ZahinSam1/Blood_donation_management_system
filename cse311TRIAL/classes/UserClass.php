@@ -1,5 +1,5 @@
 <?php  
-    require '../classes/connectionClass.php';
+    require 'connectionClass.php';
     class user{
         private $func;
 
@@ -178,10 +178,5 @@
 
 
     }
-
-
-
-
-
 
 ?>

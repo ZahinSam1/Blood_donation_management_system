@@ -6,7 +6,7 @@
 
     echo "
         <script language=javascript>
-            window.location.href='../Login.html';
+            window.location.href='../Login.php';
         </script>
     ";
 
