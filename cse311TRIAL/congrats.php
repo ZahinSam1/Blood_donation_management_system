@@ -41,7 +41,7 @@
 
     
     ?>
-    <script>
+    <script language=javascript>
         var signUp = document.getElementById("signUp");
         var login = document.getElementById("login");
         var UserName = document.getElementsByid("UserName");
@@ -53,7 +53,7 @@
         //signOut.style.visibility = "hidden";
 
         //if(isLoggedin){
-            signUp.style.visibility = "hidden";
+            signUp.style.visibility = 'hidden';
             //login.style.visibility = "hidden";
         //}
         signUp.innerHTML = "Not sign uP" ;
