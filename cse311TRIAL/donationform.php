@@ -137,11 +137,13 @@
 
             <div class="donateform"><h1>Blood Donation Form</h1></div>
                 <div class="dform">
-                    <form class="dformm" method="post" action="action/donationform.php">
+                
+                    <form class="dformm" method="post" action="action/ForDonationform.php">
                         <br>
+                        
                         <div id="dname">
                             <h2 class="dname">Name</h2>
-                            <input class="dfirstname" type="text" name="first_name"> <br>
+                            <input class="dfirstname" type="text" name="first_name" value="<?php echo $FirstName ?>"> <br>
                             <label class="dfirstlabel">First Name</label>
                             <input class="dlastname" type="text" name="last_name"> <br>
                             <label class="dlastlabel">Last Name</label>

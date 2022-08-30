@@ -28,7 +28,7 @@
     }else {
         echo "<script language=javascript>
         alert('Username / Password doesnt match');
-        window.location.href='../login.html';
+        window.location.href='../login.php';
         </script>";
     }
 ?>

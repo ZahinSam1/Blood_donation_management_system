@@ -1,8 +1,9 @@
 <?php
-    session_start();
-    
-    require '../classes/connectionClass.php';
+
     require '../classes/DonorClass.php';
+
+    if (!isset($_SESSION)) session_start();
+    
     $isUserLoggedIn = false;
     if(isset($_SESSION['logged_in'])){
         $isUserLoggedIn = true;
@@ -56,38 +57,38 @@
 
     if($isUserLoggedIn){
         $donor->getPreviousInfo($email);
+        $sep = explode(' ', $donor->getName());
+        $FirstName =$sep[0];
+        $lastName = $sep[1];
     }else{
-        
-    }
+        $donor->setName($name);
+        $donor->setUserName($uName);
+        $donor->setDoB($dob);
+        $donor->setHeight($height);
+        $donor->setWeight($weight);
+        $donor->setemailId($email);
+        $donor->setPhoneNumber($phoneNumber);
+        $donor->setAddress($address);
+        $donor->setHeight($height);
+        $donor->setWeight($weight);
+        $donor->setBloodGroup($bloodGroup);
+        $donor->setGender($gender);
 
-    $donor->setName($name);
-    $donor->setUserName($uName);
-    $donor->setDoB($dob);
-    $donor->setHeight($height);
-    $donor->setWeight($weight);
-    $donor->setemailId($email);
-    $donor->setPhoneNumber($phoneNumber);
-    $donor->setAddress($address);
-    $donor->setHeight($height);
-    $donor->setWeight($weight);
-    $donor->setBloodGroup($bloodGroup);
-    $donor->setGender($gender);
+        $donor->setConditionStatus($condition);
 
-    $donor->setConditionStatus($condition);
-
-    if($condition = 'OK'){
-        $userExist = $donor->isUserExist($email);
-        if($userExist==false){
-            $donor->insertIntoDatabase();
-        }else{ 
-            echo '<script language=javascript>
-            alert("Error! This Email is already taken!");
-        </script>';
+        if($condition = 'OK'){
+            $userExist = $donor->isUserExist($email);
+            if($userExist==false){
+                $donor->insertIntoDatabase();
+            }else{ 
+                echo "<script language=javascript>
+                alert('Error! This Email is already taken!');
+                window.location.href = '../Login.php';
+            </script>";
+            }
+            
         }
-        
     }
-
-
 
     function heightConvert($ft, $inch){
         $meters = ($ft * 0.3048) + ($inch * 0.0254);
@@ -95,7 +96,3 @@
     }
 
 ?>
-<script>
-    alert('You Have Successfully Registered for Blood donation');
-    window.location.href="../accept.html";
-</script>
