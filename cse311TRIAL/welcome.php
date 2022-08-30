@@ -178,65 +178,35 @@
             </div>
             <form>
                 <div><br>
-                    <h2>Name</h2>
-                    <?php include 'classes/profileEntry.php' ?>
-                    <input type="text" name="first_name" value="<?php ?>"> <br>
-                    <label>First Name</label>
+                    <?php include 'classes/profileEntry.php' 
+                        
+                    ?>
+                    <h3>User Name: <?php echo $user->getUserName();  ?></h3> <br>
+                    <h3>ID: <?php echo $user->getId() ;?></h3>
+                    <h3>Name: <?php echo $user->getName();  ?></h3> <br>
                     <br>
                     <br>
-                    <input type="text" name="last_name" value="<?php ?>"> <br>
-                    <label>Last Name</label><br><br>
                 </div>
                 <div>
-                    <h2>Date Of Birth</h2>
-                    <input type="text" name="month" value="<?php ?>">
-                    <label>Month</label>
+                    <h3>Date Of Birth: <?php echo $user->getDoB();  ?></h3>
                     <br><br>
-                    <input type="number" name="day">
-                    <label>Day</label>
-                    <br><br>
-                    <input type="number" name="year">
-                    <label>Year</label><br>
                 </div><br>
-                <h2>Email Address</h2>
-                <input type="email" name="email_address">
+                <h2>Email Address:<?php echo $user->getemailId(); ?> </h2>
                 <br><br>
 
-                <h2>Phone Number</h2>
-                <input type="number" name="phone_no">
+                <h3>Phone Number: <?php echo $user->getPhoneNumber(); ?></h3>
                 <br>
                 <br>
                 <div>
-                    <h2>Address</h2>
-                    <input type="number" name="address">
-                    <label>Road Number</label><br>
-                    <br>
-                    <input type="number" name="address">
-                    <label>House Number</label><br>
-                    <br>
-                    <input type="number" name="address">
-                    <label>Zip Code</label><br>
-                    <br>
-                    <input type="text" name="address">
-                    <label>City</label>
+                    <h3>Address: <?php echo $user->getAddress(); ?></h3>
+                    
                 </div>
                 <br>
 
 
-                <h2>Blood Type</h2>
-
-                <select name="blood_type">
-                    <option disabled="disabled" selected="selected">--Choose BloodType</option>
-                    <option>A+</option>
-                    <option>B+</option>
-                    <option>O+</option>
-                    <option>AB+</option>
-                    <option>A-</option>
-                    <option>B-</option>
-                    <option>O-</option>
-                    <option>AB-</option>
-                </select>
-                <br><br><br><br>
+                <h3>Blood Type: <?php echo $user->getBloodGroup(); ?></h3>
+                
+                <br><br>
                 <button class="toprofile"><a href="profile.php">EDIT PROFILE INFORMATION</a></button>
             </form>
         </div>

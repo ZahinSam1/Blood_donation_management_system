@@ -1,5 +1,8 @@
 <?php
-    session_start();
+    if(!isset($_SESSION)) 
+    { 
+        session_start(); 
+    } 
     //require '../classes/connectionClass.php';
     require 'UserClass.php';
 
@@ -9,8 +12,17 @@
     $goinEmail = $_SESSION['emailID'];
     $user->getPreviousInfo($goinEmail);
 
+    $Namesplit = explode(' ', $user->getName());
+    $firstName = $Namesplit[0];
+    $lastName = $Namesplit[1];
 
-    
+    $dobsplit = explode('-', $user->getDob());
+    $year = $dobsplit[0];
+    $mnth = $dobsplit[1];
+    $day = $dobsplit[2];
+
+
+
     
     
     // echo $user->getId();
