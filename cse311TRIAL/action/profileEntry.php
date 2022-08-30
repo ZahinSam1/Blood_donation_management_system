@@ -3,30 +3,26 @@
     //require '../classes/connectionClass.php';
     require '../classes/UserClass.php';
 
-    $con = new connection();
-    $db = $con->connect();
+    // $con = new connection();
+    // $db = $con->connect();
 
-    $query = "SELECT * FROM users WHERE Email_ID = '{$_SESSION['emailID']}' ";
+    // $query = "SELECT * FROM users WHERE Email_ID = '{$_SESSION['emailID']}' ";
 
-    //echo $_SESSION['emailID'];
-    $result = mysqli_query($db, $query);
+    // //echo $_SESSION['emailID'];
+    // $result = mysqli_query($db, $query);
 
-    $row = mysqli_fetch_array($result);
+    // $row = mysqli_fetch_array($result);
 
     $user = new user();
 
     $goinEmail = $_SESSION['emailID'];
     $user->getPreviousInfo($goinEmail);
 
-    
-    
-    
-    
-    
-    
-    
-    
-    
+    function update(){
+        
+    }
+
+
     
     
     // echo $user->getId();

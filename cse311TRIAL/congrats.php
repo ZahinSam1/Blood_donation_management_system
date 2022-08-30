@@ -37,25 +37,26 @@
         </div>
     </div>
     <?php
-        require 'action/LoginCheck.php';
+        //require 'action/LoginCheck.php';
 
     
     ?>
-    <script type="text/javascript ">
-        var signUp = document.getElementById('signUp');
-        var login = document.getElementById('login');
-        var UserName = document.getElementsByid('UserName');
-        var signOut = document.getElementById('SignOut');
+    <script>
+        var signUp = document.getElementById("signUp");
+        var login = document.getElementById("login");
+        var UserName = document.getElementsByid("UserName");
+        var signOut = document.getElementById("SignOut");
         
-        //var isLoggedin = <?php echo $_SESSION['logged_in'] ?>
+        //var isLoggedin = <?php //echo $_SESSION['logged_in'] ?>
 
-        UserName.style.visibility = "hidden";
-        signOut.style.visibility = "hidden";
+        //UserName.style.visibility = "hidden";
+        //signOut.style.visibility = "hidden";
 
         //if(isLoggedin){
             signUp.style.visibility = "hidden";
-            login.style.visibility = "hidden";
+            //login.style.visibility = "hidden";
         //}
+        signUp.innerHTML = "Not sign uP" ;
 
 
 

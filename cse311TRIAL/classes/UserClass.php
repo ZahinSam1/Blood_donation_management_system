@@ -109,14 +109,22 @@
             );
         }
 
-        public function UpdateInfoInDatabase(){
-            $this->func->updateInfo(
-                $this->getUserName(),
-                $this->getPassword(),
-                $this->getName(), $this->getDob(), $this->getHeight(),
-                $this->getWeight(), $this->getPhoneNumber(),
-                $this->getAddress(), $this->getBloodGroup()
-                );
+        public function UpdateInfoInDatabase($id, $emailID){
+
+            $con = new connection();
+            $db = $con->connect();
+
+            $query = "UPDATE users SET
+                User_Name = '{$this->getUserName()}',
+                Name = '{$this->getName()}',
+                DoB = {$this->getDob()},
+                Height = {$this->getHeight()},
+                Weight = {$this->getWeight()},
+                Phone_Number = '{$this->getPhoneNumber()}',
+                Address = '{$this->getAddress()}',
+                Blood_Group = '{$this->getBloodGroup()}',
+                Gender = '{$this->getGender()}'
+                WHERE ID = $id AND Email_ID = '$emailID'";
         }
 
         public function getPreviousInfo($emailID){
