@@ -148,20 +148,26 @@
     <div class="aboutusbackk">
         <h2 class="btable">Blood Information Table</h2>
 
+        <?php require 'classes/bloodInfo.php'; ?>
         <table class="bloodtable">
             <tr class="bcol">
                 <th>Blood Type</th>
-                <th>Number</th>
+                <th>Amount</th>
 
             </tr>
+            <?php if (mysqli_num_rows($result)): ?>
+                <?php while($row = mysqli_fetch_assoc($result)): ?>
             <tr>
-                <td>A positive</td>
-                <td>#23</td>
+                <td><?php echo $row['Blood_Type']; ?></td>
+                <td><?php echo $row['Amount']; ?></td>
             </tr>
-            <tr>
+            <?php endwhile; ?>
+            <?php endif; ?>
+            <?php mysqli_free_result($result); ?>
+            <!-- <tr>
                 <td>O negative</td>
                 <td>#99</td>
-            </tr>
+            </tr> -->
 
 
 
