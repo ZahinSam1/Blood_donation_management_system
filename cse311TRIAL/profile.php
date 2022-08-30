@@ -147,7 +147,7 @@
         <h1>Profile Information</h1>
     </div>
     <div class="dform">
-        <form class="dformm">
+        <form class="dformm" method="get" action="classes/updateProfileInfo.php">
             <?php include 'classes/profileEntry.php'; ?>
             <br>
             <div id="dname">
@@ -167,7 +167,7 @@
                 <label class="dyearlabel">Year</label>
             </div>
             <h2 class="dname">Email Address</h2>
-            <input class="demail" type="email" name="email_address" value="<?php echo $user->getemailID() ?>">
+            <input disabled="disabled" class="demail" type="email" name="email_address" value="<?php echo $user->getemailID() ?>">
 
             <h2 class="dname">Phone Number</h2>
             <input class="dphone" type="number" name="phone_no" value="<?php echo $user->getPhoneNumber(); ?>">
