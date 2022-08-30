@@ -84,7 +84,7 @@
                 $donor->DinsertIntoDatabase();
                 echo "<script language=javascript>
                 alert('Thank you for you kind concern for others!!');
-                window.location.href = '../donationform.php';
+                window.location.href = '../accept.php';
             </script>";
             }
             else if($condition != 'OK'){
