@@ -347,6 +347,15 @@ nav ul li a{
     font-size: 18px;
     font-weight: 700;
 }
+.dnew{
+    margin-left: 65px;
+    margin-right: 65px;
+    margin-top: -120px;
+    color: rgb(0, 0, 0);
+    font-size: 17px;
+    font-weight: 700;
+    text-align: center;
+}
 .ddisease{
     margin-left: 25px;
     margin-top: 30px;
@@ -389,6 +398,33 @@ nav ul li a{
     margin-left: 25px;
     margin-top: 0px;
     width: 125px;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    font-weight: 700;
+}
+.dhww{
+    position: absolute;
+    left: 450px;
+    top: 850px;
+    width: 125px;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    font-weight: 700;
+}
+.dhwww{
+    position: absolute;
+    left: 600px;
+    top: 860px;
+    width: 125px;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    font-weight: 700;
+}
+.dhwwww{
+    position: absolute;
+    left: 780px;
+    top: 870px;
+    width: 10px;
     color: rgb(0, 0, 0);
     font-size: 18px;
     font-weight: 700;
@@ -518,6 +554,17 @@ nav ul li a{
     font-size: 16px;
     color: rgb(0, 0, 0);
 }
+.hl{
+    position: relative;
+    width: 476px;
+    left: 200px;
+    top: -40px;
+    line-height: 40px;
+    border-radius: 6px;
+    padding: 0 22px;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+}
 .daddress_road{
     position: relative;
     left: 200px;
@@ -590,41 +637,34 @@ nav ul li a{
     left: 500px;
     top: -60px;
 }
-.dheight{
+
+.dfeetlabel{
     position: relative;
-    left: 200px;
-    top: -67px;
-    line-height: 40px;
-    border-radius: 6px;
-    padding: 0 22px;
-    font-size: 16px;
-}
-.dheightlabel{
-    position: relative;
-    color: #000000;
+    color: #0000009b;
     text-transform: capitalize;
-    font-size: 14px;
-    left: 203px;
-    top: -75px;
+    font-size: 15px;
+    height: 200px;
+    width: 200px;
 }
-.dweight{
+.dinchlabel{
     position: relative;
-    left: 440px;
-    top: -110px;
-    line-height: 40px;
-    border-radius: 6px;
-    padding: 0 22px;
-    font-size: 16px;
-    color: rgb(0, 0, 0);
+    color: #0000009b;
+    text-transform: capitalize;
+    font-size: 15px;
+    height: 200px;
+    width: 200px;
 }
+
 .dweightlabel{
     position: relative;
-    color: #000000;
+    color: #0000009b;
     text-transform: capitalize;
-    font-size: 14px;
-    left: 490px;
-    top: -106px;
+    font-size: 15px;
+    height: 200px;
+    width: 200px;
 }
+
+
 .dbloodtype{
     margin-left: 25px;
     margin-top: 30px;

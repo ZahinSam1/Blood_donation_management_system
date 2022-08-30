@@ -68,11 +68,29 @@
                         </div>
                         <br><br>
                         <div id="dhw">
-                            <h2 class="dhw">Height & Weight</h2>
-                            <input class="dheight" type="number" name="Height"> <br>
-                            <label class="dheightlabel">Height</label>
-                            <input class="dweight" type="number" name="last_name"> <br>
-                            <label class="dweightlabel">Weight</label>
+                            <h2 class="dhw">Height (in ft & inches)</h2>
+                            <div class="dhww">
+                                <input class="dfeet" type="range" name="dfeet" id="range_dfeet" value="5" min="4" max="7" oninput="range_dfeet_disp.value = range_dfeet.value" step="1">
+                            <output  id="range_dfeet_disp"></output>
+                            <label class="dfeetlabel">feet</label>
+                            <input class="dinch" type="range" name="dinch" id="range_dinch" value="5" min="0" max="12" oninput="range_dinch_disp.value = range_dinch.value" step="1">
+                            <output  id="range_dinch_disp"></output>
+                            <label class="dinchlabel">inch</label>
+
+                            </div>
+
+
+                            <div class="dhwww"><h2 class="dhw">Weight (in kg)</h2></div>
+                            <div class="dhwwww">
+                            <input class="dweight" type="range" name="dweight" id="range_dweight" value="5" min="50" max="200" oninput="range_dweight_disp.value = range_dweight.value" step="1">
+                            <output  id="range_dweight_disp"></output>
+                            <label class="dweightlabel">kg</label>
+                            </div>
+
+                            <!-- <input class="dheight" type="range" min="0" max="11" name="Height_ft" > <br> -->
+                            <!-- <label class="dheightlabel">Height</label> -->
+                            <!-- <input class="dweight" type="number" name="last_name"> <br>
+                            <label class="dweightlabel">Weight</label> -->
                         </div>
 
                         <h2 class="dbloodtype">Blood Type</h2>
@@ -104,16 +122,13 @@
                         <br>
 
                         <h2 id="ddonate">Are you:</h2>
-                        <label class="dradio">
-                            <input class="dradio-one" type="radio" checked="checked" >
-                            <span class="checkmark"></span>
-                            Male
-                        </label>
-                        <label class="dradio">
-                            <input class="dradio-two" type="radio">
-                            <span class="checkmark"></span>
-                            Female
-                        </label>
+                        <select name="gender" class="doption">
+                            <option disabled="disabled" selected="selected">-->Gender</option>
+                            <option>Male</option>
+                            <option>Female</option>
+                            <option>Transgender</option>
+                
+                        </select>
                         <div id="ddisease">
                             <h2 class="ddisease">Please write down if you had any previous diseases:</h2>
                             <input class="dddisease" type="text" name="disease"> <br>
