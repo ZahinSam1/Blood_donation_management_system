@@ -1,6 +1,12 @@
 <?php
+    session_start();
+    
     require '../classes/connectionClass.php';
     require '../classes/DonorClass.php';
+    $isUserLoggedIn = false;
+    if(isset($_SESSION['logged_in'])){
+        $isUserLoggedIn = true;
+    }
 
     
     $con = new connection();
@@ -47,6 +53,12 @@
 
 
     $donor = new Donor();
+
+    if($isUserLoggedIn){
+        $donor->getPreviousInfo($email);
+    }else{
+        
+    }
 
     $donor->setName($name);
     $donor->setUserName($uName);
