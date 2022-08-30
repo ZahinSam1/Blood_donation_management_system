@@ -217,12 +217,12 @@
 
                         <h2 id="ddonate">Did you donate blood before?</h2>
                         <label class="dradio">
-                            <input class="dradio-one" type="radio" checked="checked" >
+                            <input class="dradio-one" type="radio" checked="checked" name="hasDonate">
                             <span class="checkmark"></span>
                             Yes
                         </label>
                         <label class="dradio">
-                            <input class="dradio-two" type="radio">
+                            <input class="dradio-two" type="radio" name="hasDonate">
                             <span class="checkmark"></span>
                             No
                         </label>
@@ -234,7 +234,7 @@
                             <option disabled="disabled" selected="selected">-->Gender</option>
                             <option>Male</option>
                             <option>Female</option>
-                            <option>Transgender</option>
+                            <option>Other</option>
                 
                         </select>
                         <div id="ddisease">

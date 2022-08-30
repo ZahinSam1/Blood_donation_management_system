@@ -38,29 +38,31 @@
     $height = heightConvert($ft, $inch);
     $minHeight = 1.4732;
 
-    $weight = $_POST[''];
+    $weight = $_POST['dweight'];
     $minWeight = 50;
+
+    $prevDisease = $_POST['disease'];
     $condition = 'NOT OK';
-    if($height > $minHeight && $weight > $minWeight){
+    if($height > $minHeight && $weight > $minWeight && $prevDisease=='No'){
         $condition = 'OK';
     }
 
 
-    $bloodGroup;
+    $bloodGroup = $_POST['blood_type'];
 
-    $gender;
+    $gender = $_POST['gender'];
 
 
 
 
     $donor = new Donor();
 
-    if($isUserLoggedIn){
-        $donor->getPreviousInfo($email);
-        $sep = explode(' ', $donor->getName());
-        $FirstName =$sep[0];
-        $lastName = $sep[1];
-    }else{
+    // if($isUserLoggedIn){
+    //     $donor->getPreviousInfo($email);
+    //     $sep = explode(' ', $donor->getName());
+    //     $FirstName =$sep[0];
+    //     $lastName = $sep[1];
+    // }else{
         $donor->setName($name);
         $donor->setUserName($uName);
         $donor->setDoB($dob);
@@ -76,11 +78,18 @@
 
         $donor->setConditionStatus($condition);
 
-        if($condition = 'OK'){
+        if($condition == 'OK'){
             $userExist = $donor->isUserExist($email);
             if($userExist==false){
                 $donor->insertIntoDatabase();
-            }else{ 
+            }
+            else if($condition != 'OK'){
+                echo "<script language=javascript>
+                alert('Please!! You are not eligible to donate blood.');
+                window.location.href = '../donationform.php';
+            </script>";
+            }
+            else{ 
                 echo "<script language=javascript>
                 alert('Error! This Email is already taken!');
                 window.location.href = '../Login.php';
@@ -88,7 +97,7 @@
             }
             
         }
-    }
+    //}
 
     function heightConvert($ft, $inch){
         $meters = ($ft * 0.3048) + ($inch * 0.0254);
