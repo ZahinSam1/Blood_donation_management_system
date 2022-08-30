@@ -1,11 +1,9 @@
 <?php
-    include "UserClass.php";
+    require "UserClass.php";
 
     class Donor extends user{
-        //private $donorName;
         private $condition;
         private $donateDate;
-        private $user;
         function __construct()
         {
         }

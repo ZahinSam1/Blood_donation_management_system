@@ -142,30 +142,30 @@
         </nav>
     </div>
 
-    <div class="donateform">
-        <h1>Blood Donation Form</h1>
-    </div>
-    <div class="dform">
-        <form class="dformm" method="post" action="action/donationform.php">
-            <br>
-            <div id="dname">
-                <h2 class="dname">Name</h2>
-                <input class="dfirstname" type="text" name="first_name"> <br>
-                <label class="dfirstlabel">First Name</label>
-                <input class="dlastname" type="text" name="last_name"> <br>
-                <label class="dlastlabel">Last Name</label>
+            <div class="donateform">
+                <h1>Blood Donation Form</h1>
             </div>
-            <div id="ddob">
-                <h2 class="ddob">Date Of Birth</h2>
-                <input class="dmonth" type="text" name="month">
-                <label class="dmonthlabel">Month</label>
-                <input class="dday" type="number" name="day">
-                <label class="ddaylabel">Day</label>
-                <input class="dyear" type="number" name="year">
-                <label class="dyearlabel">Year</label>
-            </div>
-            <h2 class="dname">Email Address</h2>
-            <input class="demail" type="email" name="email_address">
+                <div class="dform">
+                    <form class="dformm" method="post" action="action/donationform.php">
+                        <br>
+                        <div id="dname">
+                            <h2 class="dname">Name</h2>
+                            <input class="dfirstname" type="text" name="first_name"> <br>
+                            <label class="dfirstlabel">First Name</label>
+                            <input class="dlastname" type="text" name="last_name"> <br>
+                            <label class="dlastlabel">Last Name</label>
+                        </div>
+                        <div id="ddob">
+                            <h2 class="ddob">Date Of Birth</h2>
+                            <input class="dmonth" type="text" name="month"> 
+                            <label class="dmonthlabel">Month</label>
+                            <input class="dday" type="number" name="day"> 
+                            <label class="ddaylabel">Day</label>
+                            <input class="dyear" type="number" name="year">
+                            <label class="dyearlabel">Year</label>
+                        </div>
+                        <h2 class="dname">Email Address</h2>
+                        <input class="demail" type="email" name="email_address">
 
             <h2 class="dname">Phone Number</h2>
             <input class="dphone" type="number" name="phone_no">
@@ -194,52 +194,49 @@
                     <output id="range_dinch_disp"></output>
                     <label class="dinchlabel">inch</label>
 
-                </div>
+                            </div>
 
 
-                <div class="dhwww">
-                    <h2 class="dhw">Weight (in kg)</h2>
-                </div>
-                <div class="dhwwww">
-                    <input class="dweight" type="range" name="dweight" id="range_dweight" value="5" min="50" max="200"
-                        oninput="range_dweight_disp.value = range_dweight.value" step="1">
-                    <output id="range_dweight_disp"></output>
-                    <label class="dweightlabel">kg</label>
-                </div>
+                            <div class="dhwww"><h2 class="dhw">Weight (in kg)</h2></div>
+                            <div class="dhwwww">
+                            <input class="dweight" type="range" name="dweight" id="range_dweight" value="5" min="50" max="200" oninput="range_dweight_disp.value = range_dweight.value" step="1">
+                            <output  id="range_dweight_disp"></output>
+                            <label class="dweightlabel">kg</label>
+                            </div>
 
-                <!-- <input class="dheight" type="range" min="0" max="11" name="Height_ft" > <br> -->
-                <!-- <label class="dheightlabel">Height</label> -->
-                <!-- <input class="dweight" type="number" name="last_name"> <br>
+                            <!-- <input class="dheight" type="range" min="0" max="11" name="Height_ft" > <br> -->
+                            <!-- <label class="dheightlabel">Height</label> -->
+                            <!-- <input class="dweight" type="number" name="last_name"> <br>
                             <label class="dweightlabel">Weight</label> -->
-            </div>
+                        </div>
 
-            <h2 class="dbloodtype">Blood Type</h2>
+                        <h2 class="dbloodtype">Blood Type</h2>
 
-            <select name="blood_type" class="doption">
-                <option disabled="disabled" selected="selected">--Choose BloodType</option>
-                <option>A+</option>
-                <option>B+</option>
-                <option>O+</option>
-                <option>AB+</option>
-                <option>A-</option>
-                <option>B-</option>
-                <option>O-</option>
-                <option>AB-</option>
-            </select>
+                        <select name="blood_type" class="doption">
+                            <option disabled="disabled" selected="selected">--Choose BloodType</option>
+                            <option>A+</option>
+                            <option>B+</option>
+                            <option>O+</option>
+                            <option>AB+</option>
+                            <option>A-</option>
+                            <option>B-</option>
+                            <option>O-</option>
+                            <option>AB-</option>
+                        </select>
 
-            <h2 id="ddonate">Did you donate blood before?</h2>
-            <label class="dradio">
-                <input class="dradio-one" type="radio" checked="checked">
-                <span class="checkmark"></span>
-                Yes
-            </label>
-            <label class="dradio">
-                <input class="dradio-two" type="radio">
-                <span class="checkmark"></span>
-                No
-            </label>
-            <br>
-            <br>
+                        <h2 id="ddonate">Did you donate blood before?</h2>
+                        <label class="dradio">
+                            <input class="dradio-one" type="radio" checked="checked" >
+                            <span class="checkmark"></span>
+                            Yes
+                        </label>
+                        <label class="dradio">
+                            <input class="dradio-two" type="radio">
+                            <span class="checkmark"></span>
+                            No
+                        </label>
+                        <br>
+                        <br>
 
             <h2 id="ddonate">Are you:</h2>
             <select name="gender" class="doption">

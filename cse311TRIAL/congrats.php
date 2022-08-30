@@ -16,30 +16,26 @@
 
     <div class="navbar">
         <nav>
-            <li>
-                <div class="verline"></div>
-            </li>
+            <li> <div class="verline"></div></li>
 
-            <a href="index.php"><img src="img/LifeSource Foundation-1 (2).png" alt="logo" height="50px"
-                    width="200px"></a>
-            <ul>
-                <?php session_start();
+            <a href="index.html"><img src="img/LifeSource Foundation-1 (2).png" alt="logo" height="50px" 
+                width="200px"></a> 
+           <ul>
+            <?php session_start();
                 $userLoggedIn = false;
                 if(isset($_SESSION['logged_in'])){
                     $userLoggedIn = true;
                     $uName = $_SESSION['username'];
                 }
             ?>
-                <li> <a href="index.php">HOME</a> </li>
-                <li> <a href="about.php">ABOUT US</a></li>
-                <li> <a href="donorpanel.php">INFORMATION</a> </li>
-                <li> <a href="donationform.php">DONATE BLOOD</a> </li>
-                <li> <a href="recieveform.php">RECIEVE BLOOD</a> </li>
-                <li>
-                    <p class="undersquare">________</p>
-                </li>
-                <li id="signUp">
-                    <a href="SignUp.php">SIGN UP
+               <li> <a href="index.html">HOME</a> </li>
+               <li> <a href="about.html">ABOUT US</a></li>
+               <li> <a href="donorpanel.html">INFORMATION</a> </li>
+               <li> <a href="donationform.html">DONATE BLOOD</a> </li>
+               <li> <a href="recieveform.html">RECIEVE BLOOD</a> </li>
+               <li> <p class="undersquare">________</p></li>
+               <li id="signUp"> 
+                    <a href="SignUp.html">SIGN UP
                         <?php
                             if($userLoggedIn){
                                 echo "
@@ -61,9 +57,9 @@
                         ?>
                     </a>
                 </li>
-                <li id="login">
-                    <a href="Login.php">LOGIN
-                        <?php
+               <li id="login"> 
+                    <a href="Login.html">LOGIN
+                    <?php
                             if($userLoggedIn){
                                 echo "
                                     <script language=javascript>

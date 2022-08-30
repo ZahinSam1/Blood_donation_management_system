@@ -52,11 +52,9 @@
         if($result){
             echo "<script language=javascript>
                 alert('successfully Registered!');
-                window.location.href='../login.html? success=1'
+                window.location.href='../login.php? success=1'
             </script>";
         }else{
-            //echo "Failed! This Email is taken! User Another";
-            // $user1->popUpMsg("Failed! This Email is taken! User Another");
             echo "<script language=javascript>
                 alert('Failed! This Email is taken! User Another.');
             </script>";
