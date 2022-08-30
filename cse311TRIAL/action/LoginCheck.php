@@ -23,7 +23,7 @@
         $_SESSION['logged_in'] = true;
         echo " <script language=javascript>
         alert('Login Successful');
-        window.location.href='../congrats.php';
+        window.location.href='../welcome.php';
         </script>";
     }else {
         echo "<script language=javascript>
