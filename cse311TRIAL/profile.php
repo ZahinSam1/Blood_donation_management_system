@@ -144,7 +144,7 @@
     </div>
 
     <div class="donateform">
-        <h1>Private Information</h1>
+        <h1>Profile Information</h1>
     </div>
     <div class="dform">
         <form class="dformm">
