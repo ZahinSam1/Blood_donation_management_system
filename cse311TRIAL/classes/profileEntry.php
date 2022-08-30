@@ -1,7 +1,7 @@
 <?php
     session_start();
     //require '../classes/connectionClass.php';
-    require '../classes/UserClass.php';
+    require 'UserClass.php';
 
 
     $user = new user();
@@ -9,11 +9,8 @@
     $goinEmail = $_SESSION['emailID'];
     $user->getPreviousInfo($goinEmail);
 
-    function update(){
-        
-    }
 
-
+    
     
     
     // echo $user->getId();

@@ -179,16 +179,17 @@
             <form>
                 <div><br>
                     <h2>Name</h2>
-                    <input type="text" name="first_name"> <br>
+                    <?php include 'classes/profileEntry.php' ?>
+                    <input type="text" name="first_name" value="<?php ?>"> <br>
                     <label>First Name</label>
                     <br>
                     <br>
-                    <input type="text" name="last_name"> <br>
+                    <input type="text" name="last_name" value="<?php ?>"> <br>
                     <label>Last Name</label><br><br>
                 </div>
                 <div>
                     <h2>Date Of Birth</h2>
-                    <input type="text" name="month">
+                    <input type="text" name="month" value="<?php ?>">
                     <label>Month</label>
                     <br><br>
                     <input type="number" name="day">
