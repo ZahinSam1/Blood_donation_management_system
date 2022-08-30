@@ -152,31 +152,31 @@
             <br>
             <div id="dname">
                 <h2 class="dname">Name</h2>
-                <input class="dfirstname" type="text" name="first_name" value="<?php ?>"> <br>
+                <input class="dfirstname" type="text" name="first_name" value="<?php echo $firstName; ?>"> <br>
                 <label class="dfirstlabel">First Name</label>
-                <input class="dlastname" type="text" name="last_name" value="<?php ?>"> <br>
+                <input class="dlastname" type="text" name="last_name" value="<?php echo $lastName; ?>"> <br>
                 <label class="dlastlabel">Last Name</label>
             </div>
             <div id="ddob">
                 <h2 class="ddob">Date Of Birth</h2>
-                <input class="dmonth" type="text" name="month" value="<?php ?>">
+                <input class="dmonth" type="text" name="month" value="<?php echo $mnth; ?>">
                 <label class="dmonthlabel">Month</label>
-                <input class="dday" type="number" name="day" value="<?php ?>">
+                <input class="dday" type="number" name="day" value="<?php echo $day; ?>">
                 <label class="ddaylabel">Day</label>
-                <input class="dyear" type="number" name="year" value="<?php ?>">
+                <input class="dyear" type="number" name="year" value="<?php echo $year; ?>">
                 <label class="dyearlabel">Year</label>
             </div>
             <h2 class="dname">Email Address</h2>
-            <input class="demail" type="email" name="email_address" value="<?php ?>">
+            <input class="demail" type="email" name="email_address" value="<?php echo $user->getemailID() ?>">
 
             <h2 class="dname">Phone Number</h2>
-            <input class="dphone" type="number" name="phone_no" value="<?php ?>">
+            <input class="dphone" type="number" name="phone_no" value="<?php echo $user->getPhoneNumber(); ?>">
             <br><br>
             <div id="dd">
                 <h2 class="dd">Address</h2>
                 <!-- <input class="daddress_road" type="number" name="address"> <br>
                 <label class="daddresslabel_road">Road Number</label> -->
-                <input class="hl" type="text" name="address"> <br>
+                <input class="hl" type="text" name="address" value="<?php echo $user->getAddress(); ?>"> <br>
                 <label class="daddresslabel_road">Address</label>
             </div>
             <br><br>
