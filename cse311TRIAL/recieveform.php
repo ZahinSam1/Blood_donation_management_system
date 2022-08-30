@@ -172,7 +172,7 @@
             <br>
             <div id="dd">
                 <h2 class="dd">Hospital Location</h2>
-                <input class="hl" type="number" name="address"> <br>
+                <input class="hl" type="text" name="address"> <br>
                 <label class="daddresslabel_road">Address</label>
 
             </div>
