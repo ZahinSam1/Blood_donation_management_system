@@ -24,8 +24,22 @@
             $this->donateDate = $donateDate;
         }
 
-        function __destruct()
-        {
+        public function DinsertIntoDatabase(){
+            $con = new connection();
+            $db = $con->connect();
+            $query = "INSERT INTO users(Email_ID, User_Name, Name, DoB, Height, Weight, Phone_Number, Address, Blood_Group, Gender) 
+            VALUES('{$this->getemailID()}',
+            '{$this->getUserName()}',
+            '{$this->getName()}',
+            '{$this->getDob()}',
+             {$this->getHeight()},
+             {$this->getWeight()},
+            '{$this->getPhoneNumber()}',
+            '{$this->getAddress()}',
+            '{$this->getBloodGroup()}',
+            '{$this->getGender()}')";
+
+            mysqli_query($db, $query);
             
         }
 

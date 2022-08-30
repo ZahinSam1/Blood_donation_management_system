@@ -152,35 +152,35 @@
                         
                         <div id="dname">
                             <h2 class="dname">Name</h2>
-                            <input class="dfirstname" type="text" name="first_name" value="<?php echo $FirstName ?>"> <br>
+                            <input class="dfirstname" type="text" name="first_name" required><br>
                             <label class="dfirstlabel">First Name</label>
-                            <input class="dlastname" type="text" name="last_name"> <br>
+                            <input class="dlastname" type="text" name="last_name" required> <br>
                             <label class="dlastlabel">Last Name</label>
                         </div>
                         <div id="ddob">
                             <h2 class="ddob">Date Of Birth</h2>
-                            <input class="dmonth" type="text" name="month"> 
+                            <input class="dmonth" type="text" name="month" min="1" max="12" required> 
                             <label class="dmonthlabel">Month</label>
-                            <input class="dday" type="number" name="day"> 
+                            <input class="dday" type="number" name="day" min="1" max="31" required> 
                             <label class="ddaylabel">Day</label>
-                            <input class="dyear" type="number" name="year">
+                            <input class="dyear" type="number" name="year" min="1980" max="2022" required>
                             <label class="dyearlabel">Year</label>
                         </div>
                         <h2 class="dname">Email Address</h2>
                         <input class="demail" type="email" name="email_address">
 
             <h2 class="dname">Phone Number</h2>
-            <input class="dphone" type="number" name="phone_no">
+            <input class="dphone" type="number" name="phone_no" required>
             <br><br>
             <div id="dd">
                 <h2 class="dd">Address</h2>
-                <input class="daddress_road" type="number" name="road_no"> <br>
+                <input class="daddress_road" type="number" name="road_no" required> <br>
                 <label class="daddresslabel_road">Road Number</label>
-                <input class="daddress_house" type="number" name="house_no"> <br>
+                <input class="daddress_house" type="number" name="house_no" required> <br>
                 <label class="daddresslabel_house">House Number</label>
-                <input class="daddress_zip" type="number" name="zip_code"> <br>
+                <input class="daddress_zip" type="number" name="zip_code" required> <br>
                 <label class="daddresslabel_zip">Zip Code</label>
-                <input class="daddress_city" type="text" name="city"> <br>
+                <input class="daddress_city" type="text" name="city" required> <br>
                 <label class="daddresslabel_city">City</label>
             </div>
             <br><br>
@@ -214,7 +214,7 @@
 
                         <h2 class="dbloodtype">Blood Type</h2>
 
-                        <select name="blood_type" class="doption">
+                        <select name="blood_type" class="doption" required>
                             <option disabled="disabled" selected="selected">--Choose BloodType</option>
                             <option>A+</option>
                             <option>B+</option>
@@ -241,7 +241,7 @@
                         <br>
 
                         <h2 id="ddonate">Are you:</h2>
-                        <select name="gender" class="doption">
+                        <select name="gender" class="doption" required>
                             <option disabled="disabled" selected="selected">-->Gender</option>
                             <option>Male</option>
                             <option>Female</option>
