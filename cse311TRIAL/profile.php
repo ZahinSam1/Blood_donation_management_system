@@ -148,28 +148,29 @@
     </div>
     <div class="dform">
         <form class="dformm">
+            <?php include 'classes/profileEntry.php'; ?>
             <br>
             <div id="dname">
                 <h2 class="dname">Name</h2>
-                <input class="dfirstname" type="text" name="first_name"> <br>
+                <input class="dfirstname" type="text" name="first_name" value="<?php ?>"> <br>
                 <label class="dfirstlabel">First Name</label>
-                <input class="dlastname" type="text" name="last_name"> <br>
+                <input class="dlastname" type="text" name="last_name" value="<?php ?>"> <br>
                 <label class="dlastlabel">Last Name</label>
             </div>
             <div id="ddob">
                 <h2 class="ddob">Date Of Birth</h2>
-                <input class="dmonth" type="text" name="month">
+                <input class="dmonth" type="text" name="month" value="<?php ?>">
                 <label class="dmonthlabel">Month</label>
-                <input class="dday" type="number" name="day">
+                <input class="dday" type="number" name="day" value="<?php ?>">
                 <label class="ddaylabel">Day</label>
-                <input class="dyear" type="number" name="year">
+                <input class="dyear" type="number" name="year" value="<?php ?>">
                 <label class="dyearlabel">Year</label>
             </div>
             <h2 class="dname">Email Address</h2>
-            <input class="demail" type="email" name="email_address">
+            <input class="demail" type="email" name="email_address" value="<?php ?>">
 
             <h2 class="dname">Phone Number</h2>
-            <input class="dphone" type="number" name="phone_no">
+            <input class="dphone" type="number" name="phone_no" value="<?php ?>">
             <br><br>
             <div id="dd">
                 <h2 class="dd">Address</h2>
