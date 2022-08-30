@@ -235,8 +235,8 @@
                     <option>O-</option>
                     <option>AB-</option>
                 </select>
-
-
+                <br><br><br><br>
+                <button class="toprofile"><a href="profile.php">EDIT PROFILE INFORMATION</a></button>
             </form>
         </div>
 

@@ -1377,7 +1377,7 @@ input[type="submit"]:hover{
 .welcomeback{
     position: relative;
     background-image: linear-gradient(to right, #ffffffe8, rgba(189, 183, 183, 0.626));
-    height: 200vh;
+    height: 100vh;
     width: 80vh;
     margin-left: 10%;
     margin-top: 20px;
@@ -1417,8 +1417,20 @@ input[type="submit"]:hover{
     color: rgb(0, 0, 0);
     margin: 22px;
 }
+.toprofile {
+    border: 1px solid #6a060675;
+    border-radius: 20px;
+    height: 50px;
+    width: 250px;
+    text-align: center;
+    background-color: #6a0606b7;
+}
+.toprofile a{
+    color: white;
+    font-size: 15px;
+}
 .proinfo{
-    position: relative;
+    position: absolute;
     background-image: linear-gradient(to right, #ffffffe8, rgba(189, 183, 183, 0.626));
     height: auto;
     width: 50vh;
@@ -1426,7 +1438,7 @@ input[type="submit"]:hover{
     margin-top: 20px;
     border-radius: 20px;
     left: 600px;
-    top: -1410px;
+    top: 111px;
     padding: 60px;
 }
 .proinfoo{
@@ -1442,7 +1454,6 @@ input[type="submit"]:hover{
 }
 .invidiv{
     background-color: rgba(75, 17, 17, 0.269);
-
     border-radius: 20px;
     height: 200px;
     width: 200px;
