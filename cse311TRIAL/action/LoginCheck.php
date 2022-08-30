@@ -19,16 +19,14 @@
         
         $_SESSION['emailID'] = $Email;
         $_SESSION['logged_in'] = true;
-    ?>
-        <script>
+        echo " <script language=javascript>
         alert('Login Successful');
         window.location.href='../congrats.php';
-        </script>
-    <?php 
-    }else { ?>
-        <script>
-            alert('Username / Password doesnt match');
-            window.location.href='../login.html';
-            </script>
-    
-    <?php } ?>
+        </script>";
+    }else {
+        echo "<script language=javascript>
+        alert('Username / Password doesnt match');
+        window.location.href='../login.html';
+        </script>";
+    }
+?>
