@@ -51,12 +51,12 @@
         $result = mysqli_query($db, $query);
         if($result){
             //echo "<script>successfully Registered!</script>";
-            $user1->popUpMsg("successfully Registered!");
-            sleep(2);
-            header("location:../Login.html? success=1");
+            // $user1->popUpMsg("successfully Registered!");
+            // sleep(2);
+            // header("location:../Login.html? success=1");
         }else{
             //echo "Failed! This Email is taken! User Another";
-            $user1->popUpMsg("Failed! This Email is taken! User Another");
+            // $user1->popUpMsg("Failed! This Email is taken! User Another");
         }
 
     //}else{

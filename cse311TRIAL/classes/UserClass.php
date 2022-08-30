@@ -100,13 +100,20 @@
 
         //to pass the info to DB function class.php
         public function insertIntoDatabase(){
+            $con = new connection();
+            $db = $con->connect();
+            $query = "INSERT INTO users(Email_ID, User_Name, Name, DoB, Height, Weight, Phone_Number, Address, Blood_Group, Gender) 
+            VALUES('{$this->getemailID()}',
+            '{$this->getUserName()}',
+            '{$this->getName()}',
+            '{$this->getDob()}',
+             {$this->getHeight()},
+             {$this->getWeight()},
+            '{$this->getPhoneNumber()}',
+            '{$this->getAddress()}',
+            '{$this->getBloodGroup()}',
+            '{$this->getGender()}')";
             
-            $this->func->userRegister($this->getUserName(),
-                $this->getemailID(), $this->getPassword(),
-                $this->getName(), $this->getDob(), $this->getHeight(),
-                $this->getWeight(), $this->getPhoneNumber(),
-                $this->getAddress(), $this->getBloodGroup()
-            );
         }
 
         public function UpdateInfoInDatabase($id, $emailID){
@@ -152,12 +159,6 @@
             $this->setGender($info['Gender']);
         }
 
-        public function popUpMsg($message){
-            echo '<script type="text/javascript">';
-            echo 'delete window.alert;';
-            echo ' alert("$message");';
-            echo '</script>';
-        }
 
     }
 
