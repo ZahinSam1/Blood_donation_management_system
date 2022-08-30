@@ -245,7 +245,7 @@
                             <option disabled="disabled" selected="selected">-->Gender</option>
                             <option>Male</option>
                             <option>Female</option>
-                            <option>Transgender</option>
+                            <option>Other</option>
                 
                         </select>
                         <div id="ddisease">
