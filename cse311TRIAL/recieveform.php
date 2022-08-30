@@ -146,7 +146,7 @@
         <h1>Emergency Blood Requirement Form:</h1>
     </div>
     <div class="dform">
-        <form class="dformm">
+        <form class="dformm" method="post" action="action/requestBlood.php">
             <br>
             <div id="dname">
                 <h2 class="dname">Name</h2>
@@ -185,16 +185,16 @@
 
             <h2 class="dbloodtype">Blood Type</h2>
 
-            <select name="blood_type" class="doption">
+            <select name="blood_type" class="doption" required>
                 <option disabled="disabled" selected="selected">Choose BloodType That You Need:</option>
-                <option>A+</option>
-                <option>B+</option>
-                <option>O+</option>
-                <option>AB+</option>
-                <option>A-</option>
-                <option>B-</option>
-                <option>O-</option>
-                <option>AB-</option>
+                <option value="A+">A+</option>
+                <option value="B+">B+</option>
+                <option value="O+">O+</option>
+                <option value="AB+">AB+</option>
+                <option value="A-">A-</option>
+                <option value="B-">B-</option>
+                <option value="O-">O-</option>
+                <option value="AB-">AB-</option>
             </select>
 
 
@@ -204,12 +204,12 @@
 
             <h2 id="ddonate">Are you:</h2>
             <label class="dradio">
-                <input class="dradio-one" type="radio">
+                <input class="dradio-one" type="radio" name="gender" value="Male">
                 <span class="checkmark"></span>
                 Male
             </label>
             <label class="dradio">
-                <input class="dradio-two" type="radio">
+                <input class="dradio-two" type="radio" name="gender" value="Female">
                 <span class="checkmark"></span>
                 Female
             </label>

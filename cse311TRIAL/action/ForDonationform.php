@@ -1,15 +1,7 @@
 <?php
 
     require '../classes/DonorClass.php';
-
-    if (!isset($_SESSION)) session_start();
-    
-    $isUserLoggedIn = false;
-    if(isset($_SESSION['logged_in'])){
-        $isUserLoggedIn = true;
-    }
-
-    
+     
     $con = new connection();
     $db = $con->connect();
 
