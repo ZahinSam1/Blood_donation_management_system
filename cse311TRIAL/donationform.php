@@ -216,14 +216,14 @@
 
                         <select name="blood_type" class="doption" required>
                             <option disabled="disabled" selected="selected">--Choose BloodType</option>
-                            <option>A+</option>
-                            <option>B+</option>
-                            <option>O+</option>
-                            <option>AB+</option>
-                            <option>A-</option>
-                            <option>B-</option>
-                            <option>O-</option>
-                            <option>AB-</option>
+                            <option value="A+">A+</option>
+                            <option value="B+">B+</option>
+                            <option value="O+">O+</option>
+                            <option value="AB+">AB+</option>
+                            <option value="A-">A-</option>
+                            <option value="B-">B-</option>
+                            <option value="O-">O-</option>
+                            <option value="AB-">AB-</option>
                         </select>
 
                         <h2 id="ddonate">Did you donate blood before?</h2>
@@ -243,9 +243,9 @@
                         <h2 id="ddonate">Are you:</h2>
                         <select name="gender" class="doption" required>
                             <option disabled="disabled" selected="selected">-->Gender</option>
-                            <option>Male</option>
-                            <option>Female</option>
-                            <option>Other</option>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                            <option value="Other">Other</option>
                 
                         </select>
                         <div id="ddisease">
