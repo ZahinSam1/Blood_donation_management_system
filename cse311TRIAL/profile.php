@@ -173,14 +173,10 @@
             <br><br>
             <div id="dd">
                 <h2 class="dd">Address</h2>
-                <input class="daddress_road" type="number" name="address"> <br>
-                <label class="daddresslabel_road">Road Number</label>
-                <input class="daddress_house" type="number" name="address"> <br>
-                <label class="daddresslabel_house">House Number</label>
-                <input class="daddress_zip" type="number" name="address"> <br>
-                <label class="daddresslabel_zip">Zip Code</label>
-                <input class="daddress_city" type="text" name="address"> <br>
-                <label class="daddresslabel_city">City</label>
+                <!-- <input class="daddress_road" type="number" name="address"> <br>
+                <label class="daddresslabel_road">Road Number</label> -->
+                <input class="hl" type="text" name="address"> <br>
+                <label class="daddresslabel_road">Address</label>
             </div>
             <br><br>
 
